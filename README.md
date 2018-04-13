@@ -1,9 +1,6 @@
-# dotfiles
+# Dotfiles
 ❄️ Personal set of configurations for macOS
 
 1. Git clone wherever
-2. Replace your `~/.zshrc` file with
-    ```
-    # Load Zsh
-    source $HOME/path/to/dotfiles/.zshrc
-    ```
+2. Make sure dotfiles fit your needs
+3. Run `install.sh` script
