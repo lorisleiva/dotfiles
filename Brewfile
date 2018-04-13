@@ -40,6 +40,7 @@ brew 'php-code-sniffer'
 
 # Database
 brew 'mariadb'
+brew 'sqlite'
 
 # ------------------------------------------------------------------------------
 # Applications from brew cask
