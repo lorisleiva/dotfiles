@@ -2,6 +2,9 @@
 
 echo "Setting up your Mac..."
 
+# Path to dotfiles folder
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # ------------------------------------------------------------------------------
 #  Install Brew and its dependencies.
 # ------------------------------------------------------------------------------
@@ -15,10 +18,12 @@ brew tap homebrew/bundle
 brew bundle
 
 # ------------------------------------------------------------------------------
-#  Make ZSH the default shell environment.
+#  Terminal configurations
 # ------------------------------------------------------------------------------
 
 chsh -s $(which zsh)
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DIR/iTerm"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 # ------------------------------------------------------------------------------
 #  Install Composer dependencies.
