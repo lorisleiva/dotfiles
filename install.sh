@@ -21,20 +21,11 @@ brew bundle
 chsh -s $(which zsh)
 
 # ------------------------------------------------------------------------------
-#  Install Composer and its dependencies.
+#  Install Composer dependencies.
 # ------------------------------------------------------------------------------
-
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
 
 composer global require laravel/installer laravel/valet
 valet install
-
-# ------------------------------------------------------------------------------
-#  Install global NPM packages.
-# ------------------------------------------------------------------------------
-
-npm install --global yarn
 
 # ------------------------------------------------------------------------------
 #  Create a project directory.
