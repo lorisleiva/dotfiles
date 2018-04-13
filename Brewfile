@@ -36,10 +36,8 @@ brew 'yarn'
 
 # PHP
 brew 'composer'
-brew 'php72'
-brew 'php72-imagick'
+brew 'php72', args: ['with-pear']
 brew 'php-code-sniffer'
-brew 'phpcs'
 
 # Database
 brew 'mariadb'
@@ -92,10 +90,10 @@ cask 'vlc'
 cask 'whatsapp'
 
 # Fonts
-cask 'font-fira-code-pro-for-powerline'
-cask 'font-fira-code-pro'
-cask 'font-fira-sans-pro'
-cask 'font-fira-serif-pro'
+cask 'font-fira-code'
+cask 'font-fira-mono-for-powerline'
+cask 'font-fira-mono'
+cask 'font-fira-sans'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
