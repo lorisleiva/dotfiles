@@ -18,12 +18,11 @@ brew tap homebrew/bundle
 brew bundle
 
 # ------------------------------------------------------------------------------
-#  Terminal configurations
+#  Restore app configurations
 # ------------------------------------------------------------------------------
 
 chsh -s $(which zsh)
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DIR/iTerm"
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+cp "$DIR/.mackup.cfg" "$HOME/.mackup.cfg"
 
 # ------------------------------------------------------------------------------
 #  Install Composer dependencies.
