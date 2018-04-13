@@ -4,7 +4,6 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/php'
-tap 'homebrew/dupes'
 
 # ------------------------------------------------------------------------------
 # Command line interface from brew
