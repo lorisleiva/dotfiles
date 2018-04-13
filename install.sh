@@ -24,8 +24,6 @@ brew bundle
 composer global require laravel/installer laravel/lumen-installer laravel/valet
 valet install
 
-
-
 # ------------------------------------------------------------------------------
 #  Restore configurations
 # ------------------------------------------------------------------------------
