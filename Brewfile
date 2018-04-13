@@ -5,7 +5,6 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/php'
 tap 'homebrew/dupes'
-tap 'josegonzalez/homebrew-php'
 
 # ------------------------------------------------------------------------------
 # Command line interface from brew
@@ -38,7 +37,6 @@ brew 'yarn'
 # PHP
 brew 'composer'
 brew 'php72'
-brew 'php72-xdebug'
 brew 'php72-imagick'
 brew 'php-code-sniffer'
 brew 'phpcs'
