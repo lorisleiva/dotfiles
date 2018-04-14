@@ -15,6 +15,17 @@ commit() {
     eval "git commit -a -m '${commitMessage}'"
 }
 
+clone() {
+    if [[ $1 =~ "hub|lab" ]]; then
+        provider="$1"
+        shift
+    else
+        provider="hub"
+    fi
+
+    eval "git clone git@git${provider}.com:$1.git $2"
+}
+
 archive () {
     zip -r "$1".zip -i "$1" ;
 }
