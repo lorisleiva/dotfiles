@@ -2,9 +2,6 @@
 
 echo "Setting up your Mac..."
 
-# Path to dotfiles folder
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
 # ------------------------------------------------------------------------------
 #  Install Brew and its dependencies.
 # ------------------------------------------------------------------------------
@@ -25,15 +22,7 @@ composer global require laravel/installer laravel/lumen-installer laravel/valet
 valet install
 
 # ------------------------------------------------------------------------------
-#  Restore configurations
+#  Use zsh as default shell
 # ------------------------------------------------------------------------------
 
 chsh -s $(which zsh)
-cp "$DIR/.mackup.cfg" "$HOME/.mackup.cfg"
-echo "# Load Zsh\nsource $DIR/.zshrc" > "$HOME/.zshrc"
-
-# ------------------------------------------------------------------------------
-#  Create a project directory.
-# ------------------------------------------------------------------------------
-
-mkdir -p $HOME/🔥
