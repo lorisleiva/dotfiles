@@ -42,6 +42,10 @@ fs() {
     fi;
 }
 
+fso() {
+    fs "$@" | gsort -hr
+}
+
 json() {
 if [ -t 0 ]; then # argument
     python -mjson.tool <<< "$*" | pygmentize -l javascript;
