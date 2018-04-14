@@ -90,16 +90,6 @@ cask 'spotify'
 cask 'vlc'
 cask 'whatsapp'
 
-# Fonts
-cask 'font-fira-code'
-cask 'font-fira-mono-for-powerline'
-cask 'font-fira-mono'
-cask 'font-fira-sans'
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
-
 # ------------------------------------------------------------------------------
 # Applications from Mac App Store
 # ------------------------------------------------------------------------------
