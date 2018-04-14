@@ -36,9 +36,9 @@ fs() {
         local arg=-sh;
     fi
     if [[ -n "$@" ]]; then
-        du $arg -- "$@";
+        du $arg -- "$@" 2> /dev/null;
     else
-        du $arg * .*;
+        du $arg * .[^.]* 2> /dev/null;
     fi;
 }
 
@@ -79,7 +79,6 @@ tre() {
 }
 
 emptytrash() {
-    setopt +o nomatch;
     sudo rm -rf /Volumes/*/.Trashes/*;
     sudo rm -rf ~/.Trash/*;
     sudo rm -rf /private/var/log/asl/*.asl;

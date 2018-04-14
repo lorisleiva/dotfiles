@@ -6,6 +6,7 @@ export EDITOR=subl
 # Oh my zsh configurations.
 ZSH_THEME="cloud"
 ZSH_CUSTOM=$DOTFILES
+unsetopt nomatch
 plugins=()
 source $ZSH/oh-my-zsh.sh
 
