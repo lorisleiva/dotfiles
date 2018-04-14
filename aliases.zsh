@@ -1,4 +1,5 @@
 # Configurations
+alias zdot="$EDITOR $DOTFILES"
 alias zconf="$EDITOR $DOTFILES/.zshrc"
 alias zpath="$EDITOR $DOTFILES/path.zsh"
 alias zfunc="$EDITOR $DOTFILES/functions.zsh"

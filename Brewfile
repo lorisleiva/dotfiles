@@ -56,6 +56,7 @@ cask 'flux'
 cask 'numi'
 cask 'screenflow'
 cask 'sip'
+cask 'kap'
 
 # Browsers and drives
 cask 'firefox'
