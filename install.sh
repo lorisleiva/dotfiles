@@ -18,7 +18,7 @@ brew bundle
 #  Install Composer dependencies.
 # ------------------------------------------------------------------------------
 
-composer global require laravel/installer laravel/lumen-installer laravel/valet
+composer global install
 valet install
 
 # ------------------------------------------------------------------------------

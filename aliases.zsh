@@ -7,6 +7,7 @@ alias zalias="$EDITOR $DOTFILES/aliases.zsh"
 
 # Directories
 alias fire="cd ~/🔥"
+alias drive="cd ~/Google\ Drive"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 
