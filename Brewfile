@@ -93,6 +93,7 @@ cask 'whatsapp'
 # Applications from Mac App Store
 # ------------------------------------------------------------------------------
 
+mas 'Bear', id: 1091189122
 mas 'Spark', id: 1176895641
 mas 'Trello', id: 1278508951
 mas 'Unsplash Wallpapers', id: 1284863847
