@@ -26,6 +26,12 @@ clone() {
     eval "git clone git@git${provider}.com:$1.git $2"
 }
 
+new() {
+    if [[ $1 =~ "db|database" ]]; then
+        mysql -uroot -e "create database $2;"
+    fi
+}
+
 archive () {
     zip -r "$1".zip -i "$1" ;
 }
