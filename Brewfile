@@ -1,8 +1,8 @@
 # Taps
 tap 'caskroom/cask'
-tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'homebrew/services'
 
 # ------------------------------------------------------------------------------
 # Command line interface from brew
@@ -37,8 +37,10 @@ brew 'composer'
 brew 'php72', args: ['with-pear']
 brew 'php-code-sniffer'
 
-# Database
+# Database & servers
+brew 'dnsmasq'
 brew 'mariadb'
+brew 'nginx'
 brew 'sqlite'
 
 # ------------------------------------------------------------------------------

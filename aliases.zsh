@@ -1,9 +1,6 @@
 # Configurations
-alias zdot="$EDITOR $DOTFILES"
-alias zconf="$EDITOR $DOTFILES/.zshrc"
-alias zpath="$EDITOR $DOTFILES/path.zsh"
-alias zfunc="$EDITOR $DOTFILES/functions.zsh"
-alias zalias="$EDITOR $DOTFILES/aliases.zsh"
+alias dot="cd $DOTFILES && $EDITOR $DOTFILES"
+alias bundle="brew bundle --file='$DOTFILES/Brewfile'"
 
 # Directories
 alias fire="cd ~/🔥"
