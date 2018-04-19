@@ -14,6 +14,8 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+sudo pecl install imagick
+
 # ------------------------------------------------------------------------------
 #  Install Composer dependencies.
 # ------------------------------------------------------------------------------

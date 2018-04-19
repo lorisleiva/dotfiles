@@ -36,6 +36,8 @@ brew 'yarn'
 brew 'composer'
 brew 'php72', args: ['with-pear']
 brew 'php-code-sniffer'
+brew 'pkg-config'
+brew 'imagemagick'
 
 # Database & servers
 brew 'dnsmasq'
