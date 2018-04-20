@@ -35,6 +35,7 @@ alias la="ls -lah"
 alias lsd="ls -lh | grep --color=never '^d'"
 
 # Command manipulations
+alias h="history | tail -10"
 alias copy="tr -d '\n' | pbcopy"
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
