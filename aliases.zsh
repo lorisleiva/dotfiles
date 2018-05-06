@@ -28,6 +28,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias nah="git reset --hard && git clean -df"
 alias push="git push"
 alias pull="git pull --rebase"
+alias out="commit && push"
 
 # List (basic, all, directories)
 alias ll="ls -lh"
