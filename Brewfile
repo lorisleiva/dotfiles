@@ -43,6 +43,7 @@ brew 'imagemagick'
 brew 'dnsmasq'
 brew 'mariadb'
 brew 'nginx'
+brew 'redis'
 brew 'sqlite'
 
 # ------------------------------------------------------------------------------
