@@ -99,6 +99,7 @@ cask 'whatsapp'
 # Applications from Mac App Store
 # ------------------------------------------------------------------------------
 
+mas '1Password', id: 1333542190
 mas 'Bear', id: 1091189122
 mas 'Magnet', id: 441258766
 mas 'Spark', id: 1176895641
