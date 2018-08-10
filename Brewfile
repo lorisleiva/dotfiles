@@ -84,6 +84,7 @@ cask 'docker'
 cask 'insomnia'
 cask 'iterm2'
 cask 'java'
+cask 'postman'
 cask 'sequel-pro'
 
 # Others
