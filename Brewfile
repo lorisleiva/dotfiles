@@ -21,6 +21,7 @@ brew 'grep'
 # Binaries
 brew 'ack'
 brew 'git'
+brew 'graphviz'
 brew 'tree'
 brew 'mackup'
 brew 'mas'
