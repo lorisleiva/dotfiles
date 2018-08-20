@@ -1,5 +1,5 @@
 # Configurations
-alias dot="cd $DOTFILES && $EDITOR $DOTFILES"
+alias dotf="cd $DOTFILES && $EDITOR $DOTFILES"
 alias bundle="brew bundle --file='$DOTFILES/Brewfile'"
 
 # Directories
