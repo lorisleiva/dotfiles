@@ -17,6 +17,7 @@ brew 'coreutils'
 brew 'findutils'
 brew 'bash'
 brew 'grep'
+brew 'telnet'
 
 # Binaries
 brew 'ack'
