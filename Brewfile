@@ -32,6 +32,7 @@ brew 'autojump'
 
 # Node
 brew 'node'
+brew 'nvm'
 brew 'yarn'
 
 # PHP
