@@ -3,7 +3,6 @@ alias dotf="cd $DOTFILES && $EDITOR $DOTFILES"
 alias bundle="brew bundle --file='$DOTFILES/Brewfile'"
 
 # Directories
-alias fire="cd ~/🔥"
 alias drive="cd ~/Google\ Drive"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"

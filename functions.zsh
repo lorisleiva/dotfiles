@@ -4,6 +4,14 @@ mkd() {
     mkdir -p "$@" && cd "$_";
 }
 
+fire() {
+    if [ "$1" = "" ]; then
+        eval "cd ~/🔥"
+    else
+        eval "cd ~/🔥 && j $1"
+    fi
+}
+
 commit() {
     commitMessage="$1"
 
@@ -64,19 +72,19 @@ fso() {
 }
 
 json() {
-if [ -t 0 ]; then # argument
-    python -mjson.tool <<< "$*" | pygmentize -l javascript;
-else # pipe
-    python -mjson.tool | pygmentize -l javascript;
-fi;
+    if [ -t 0 ]; then # argument
+        python -mjson.tool <<< "$*" | pygmentize -l javascript;
+    else # pipe
+        python -mjson.tool | pygmentize -l javascript;
+    fi;
 }
 
 count() {
-if [ -t 0 ]; then # argument
-    wc -l "$*";
-else # pipe
-    wc -l;
-fi;
+    if [ -t 0 ]; then # argument
+        wc -l "$*";
+    else # pipe
+        wc -l;
+    fi;
 }
 
 digga() {
