@@ -59,11 +59,9 @@ cask 'avibrazil-rdm'
 cask 'bartender'
 cask 'caffeine'
 cask 'daisydisk'
-cask 'deckset'
 cask 'flux'
 cask 'numi'
 cask 'screenflow'
-cask 'sip'
 cask 'kap'
 
 # Browsers and drives
