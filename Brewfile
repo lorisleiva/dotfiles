@@ -1,7 +1,7 @@
 # Taps
-tap 'caskroom/cask'
-tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'homebrew/cask'
+tap 'homebrew/cask-versions'
 tap 'homebrew/services'
 
 # ------------------------------------------------------------------------------
