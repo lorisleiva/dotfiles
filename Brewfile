@@ -89,6 +89,7 @@ cask 'postman'
 cask 'sequel-pro'
 
 # Others
+cask 'boom-3d'
 cask 'dofus'
 cask 'signal'
 cask 'skype'
