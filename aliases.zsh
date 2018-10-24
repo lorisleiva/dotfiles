@@ -18,6 +18,7 @@ alias phpunitc="phpunit --coverage-html build"
 
 # Npm
 alias ni="npm install"
+alias nr="npm run"
 alias w="npm run watch"
 
 # Git
