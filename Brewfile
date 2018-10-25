@@ -18,6 +18,7 @@ brew 'findutils'
 brew 'bash'
 brew 'grep'
 brew 'telnet'
+brew 'unrar'
 
 # Binaries
 brew 'ack'
