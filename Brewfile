@@ -30,10 +30,6 @@ brew 'mas'
 brew 'wget'
 brew 'tldr'
 brew 'autojump'
-
-# Node
-brew 'node'
-brew 'nvm'
 brew 'yarn'
 
 # PHP
