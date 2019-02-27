@@ -11,6 +11,7 @@ tap 'homebrew/services'
 # Install ZSH
 brew 'zsh'
 brew 'zsh-completions'
+brew 'fish'
 
 # Install Utilities
 brew 'coreutils'
