@@ -52,6 +52,7 @@ brew 'sqlite'
 # ------------------------------------------------------------------------------
 
 # Utils
+cask '1password'
 cask 'alfred'
 cask 'avibrazil-rdm'
 cask 'bartender'
