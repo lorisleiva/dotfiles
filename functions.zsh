@@ -122,3 +122,15 @@ update() {
     sudo gem update; 
     sudo gem cleanup;
 }
+
+phpini() {
+    php --ini | grep Loaded | cut -d" " -f12
+}
+
+xon() {
+    sed -i '' 's/^;zend_extension="xdebug\.so"/zend_extension="xdebug\.so"/' `phpini`
+}
+
+xoff() {
+    sed -i '' 's/^zend_extension="xdebug\.so"/;zend_extension="xdebug\.so"/' `phpini`
+}
