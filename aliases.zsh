@@ -14,7 +14,6 @@ alias cu="composer update"
 alias cr="composer require"
 alias ci="composer install"
 alias cda="composer dump-autoload -o"
-alias phpunitc="phpunit --coverage-html build"
 
 # Npm
 alias ni="npm install"

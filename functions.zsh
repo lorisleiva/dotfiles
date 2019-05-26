@@ -134,3 +134,9 @@ xon() {
 xoff() {
     sed -i '' 's/^zend_extension="xdebug\.so"/;zend_extension="xdebug\.so"/' `phpini`
 }
+
+phpunitc() {
+    xon
+    phpunit --coverage-html build
+    xoff
+}
