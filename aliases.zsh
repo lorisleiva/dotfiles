@@ -10,9 +10,10 @@ alias dt="cd ~/Desktop"
 # Laravel, php
 alias a="php artisan"
 alias fresh="php artisan migrate:fresh --seed"
-alias cu="composer update"
+alias routes="php artisan route:list"
 alias cr="composer require"
 alias ci="composer install"
+alias cu="composer update"
 alias cda="composer dump-autoload -o"
 
 # Npm
