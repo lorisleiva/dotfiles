@@ -87,6 +87,9 @@ cask 'java'
 cask 'postman'
 cask 'sequel-pro'
 
+# Graphic design
+cask 'figma'
+
 # Others
 cask 'boom-3d'
 cask 'dofus'
