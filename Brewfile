@@ -88,6 +88,7 @@ cask 'sequel-pro'
 
 # Graphic design
 cask 'figma'
+cask 'processing'
 
 # Others
 cask 'boom-3d'
