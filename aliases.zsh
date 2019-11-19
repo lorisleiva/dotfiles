@@ -20,6 +20,7 @@ alias cda="composer dump-autoload -o"
 alias ni="npm install"
 alias nr="npm run"
 alias w="npm run watch"
+alias hot="npm run hot"
 
 # Git
 alias g="git"
