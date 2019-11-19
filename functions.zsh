@@ -16,7 +16,7 @@ commit() {
     commitMessage="$1"
 
     if [ "$commitMessage" = "" ]; then
-        commitMessage=":pencil: Small changes"
+        commitMessage="wip"
     fi
 
     git add .
