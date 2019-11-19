@@ -15,6 +15,9 @@ alias cr="composer require"
 alias ci="composer install"
 alias cu="composer update"
 alias cda="composer dump-autoload -o"
+alias p="phpunit"
+alias pstop="phpunit --order-by=defects --stop-on-failure"
+alias pfilter="phpunit --filter"
 
 # Npm
 alias ni="npm install"
