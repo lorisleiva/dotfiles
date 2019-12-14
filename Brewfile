@@ -97,6 +97,7 @@ cask 'signal'
 cask 'skype'
 cask 'slack'
 cask 'spotify'
+cask 'twist'
 cask 'vlc'
 cask 'whatsapp'
 

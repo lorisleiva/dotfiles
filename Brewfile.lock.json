@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "2efa0de33f2885bfd567ba4fdb1ab91f1be8d06c"
+        "revision": "914c6634a0d9cb5fb30235a5d79739ce2302d711"
       },
       "homebrew/cask": {
-        "revision": "19d197a24ddf2ddd74f4380f6313e37a59f33dee"
+        "revision": "0e256d591a23022527b17310f58a93099b4e4e6c"
       },
       "homebrew/cask-versions": {
         "revision": "4e7e102f97028e94cb18a9860890dd82728d00f1"
@@ -701,6 +701,9 @@
       },
       "whatsapp": {
         "version": "0.3.1242"
+      },
+      "twist": {
+        "version": "1.6.19,6773"
       }
     },
     "mas": {
@@ -714,7 +717,7 @@
       },
       "Spark": {
         "id": "1176895641",
-        "version": "2.3.15"
+        "version": "2.5.1"
       },
       "Trello": {
         "id": "1278508951",
@@ -731,7 +734,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.2.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "c54bac7c8350ddd1f5fe50b8e0bd675cd61e4764",
+        "Homebrew/homebrew-core": "70ee7daeb9b6c8c82eee6edb2204a88f9b174820",
         "CLT": "",
         "Xcode": "11.2.1",
         "macOS": "10.15.1"
