@@ -704,6 +704,9 @@
       },
       "twist": {
         "version": "1.6.19,6773"
+      },
+      "anylist": {
+        "version": "1.1"
       }
     },
     "mas": {
@@ -736,7 +739,7 @@
         "HOMEBREW_PREFIX": "/usr/local",
         "Homebrew/homebrew-core": "70ee7daeb9b6c8c82eee6edb2204a88f9b174820",
         "CLT": "",
-        "Xcode": "11.2.1",
+        "Xcode": "11.3",
         "macOS": "10.15.1"
       }
     }

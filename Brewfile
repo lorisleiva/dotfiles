@@ -91,6 +91,7 @@ cask 'figma'
 cask 'processing'
 
 # Others
+cask 'anylist'
 cask 'boom-3d'
 cask 'dofus'
 cask 'signal'
