@@ -89,6 +89,7 @@ cask 'sequel-pro'
 # Graphic design
 cask 'figma'
 cask 'processing'
+cask 'sip'
 
 # Others
 cask 'anylist'
