@@ -86,6 +86,7 @@ cask 'iterm2'
 cask 'java'
 cask 'postman'
 cask 'sequel-pro'
+cask 'vagrant'
 
 # Graphic design
 cask 'figma'

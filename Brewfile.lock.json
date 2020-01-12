@@ -708,6 +708,9 @@
       },
       "rocket": {
         "version": "1.6.1,62"
+      },
+      "vagrant": {
+        "version": "2.2.6"
       }
     },
     "mas": {
