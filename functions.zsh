@@ -148,3 +148,7 @@ scheduler() {
         sleep 60
     done
 }
+
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
