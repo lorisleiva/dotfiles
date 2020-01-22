@@ -23,6 +23,7 @@ brew 'unrar'
 
 # Binaries
 brew 'ack'
+brew 'ansible'
 brew 'git'
 brew 'graphviz'
 brew 'tree'

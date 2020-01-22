@@ -2,6 +2,7 @@
 export DOTFILES=$HOME/🔥/dotfiles
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR=subl
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault-password
 
 # Oh my zsh configurations.
 ZSH_THEME="cloud"
