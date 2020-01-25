@@ -47,6 +47,7 @@ alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias map="xargs -n1"
 alias sudo='sudo ' # Enable aliases to be sudo’ed
+alias mux='tmuxinator'
 
 # Quick functions
 alias reload="exec ${SHELL} -l"
