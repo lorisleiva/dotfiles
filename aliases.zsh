@@ -48,6 +48,7 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias map="xargs -n1"
 alias sudo='sudo ' # Enable aliases to be sudo’ed
 alias mux='tmuxinator'
+alias close='tmux detach-client'
 
 # Quick functions
 alias reload="exec ${SHELL} -l"
