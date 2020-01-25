@@ -149,6 +149,11 @@ scheduler() {
     done
 }
 
-function homestead() {
+homestead() {
     ( cd ~/Homestead && vagrant $* )
+}
+
+bundle() {
+    brew bundle --file="$DOTFILES/Brewfile"
+    brew link php@7.3 --force
 }

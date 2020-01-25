@@ -24,6 +24,7 @@ brew 'unrar'
 # Binaries
 brew 'ack'
 brew 'ansible'
+brew 'autojump'
 brew 'git'
 brew 'graphviz'
 brew 'tree'
@@ -31,7 +32,8 @@ brew 'mackup'
 brew 'mas'
 brew 'wget'
 brew 'tldr'
-brew 'autojump'
+brew 'tmux'
+brew 'tmuxinator'
 brew 'yarn'
 
 # PHP
