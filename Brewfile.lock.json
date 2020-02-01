@@ -770,6 +770,9 @@
       },
       "vagrant": {
         "version": "2.2.6"
+      },
+      "station": {
+        "version": "1.63.4"
       }
     },
     "mas": {

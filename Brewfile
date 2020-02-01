@@ -71,6 +71,11 @@ cask 'firefox'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 
+# Productivity
+cask 'anylist'
+cask 'station'
+cask 'notion'
+
 # Quicklook
 cask 'qlcolorcode'
 cask 'qlmarkdown'
@@ -96,18 +101,18 @@ cask 'figma'
 cask 'processing'
 cask 'sip'
 
-# Others
-cask 'anylist'
-cask 'boom-3d'
-cask 'dofus'
-cask 'notion'
+# Communication
 cask 'signal'
 cask 'skype'
 cask 'slack'
-cask 'spotify'
 cask 'twist'
-cask 'vlc'
 cask 'whatsapp'
+
+# Others
+cask 'boom-3d'
+cask 'dofus'
+cask 'spotify'
+cask 'vlc'
 
 # ------------------------------------------------------------------------------
 # Applications from Mac App Store
