@@ -84,6 +84,7 @@ cask 'quicklook-json'
 
 # Editors and git management
 cask 'github'
+cask 'phpstorm'
 cask 'sublime-text'
 cask 'visual-studio-code'
 
