@@ -779,6 +779,9 @@
       },
       "cheatsheet": {
         "version": "1.3.4"
+      },
+      "tower": {
+        "version": "3.6.0,205:1262a183"
       }
     },
     "mas": {

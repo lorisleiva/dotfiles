@@ -87,6 +87,7 @@ cask 'quicklook-json'
 cask 'github'
 cask 'phpstorm'
 cask 'sublime-text'
+cask 'tower'
 cask 'visual-studio-code'
 
 # Development
