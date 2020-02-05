@@ -36,7 +36,7 @@ mkdir -p ~/.nvm
 # Use global .gitignore file.
 git config --global core.excludesfile $DOTFILES/.gitignore_global
 
-# Use zsh as default shell
+# Use zsh as default shell.
 chsh -s $(which zsh)
 
 # ------------------------------------------------------------------------------
