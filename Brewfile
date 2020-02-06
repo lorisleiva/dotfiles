@@ -78,7 +78,6 @@ cask 'google-chrome'
 
 # Productivity
 cask 'anylist'
-cask 'station'
 cask 'notion'
 
 # Quicklook

@@ -1,5 +1,5 @@
 # Global options
-export DOTFILES=$HOME/🔥/dotfiles
+export DOTFILES=$HOME/Code/dotfiles
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR=code
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault-password

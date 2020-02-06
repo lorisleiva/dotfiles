@@ -6,9 +6,9 @@ mkd() {
 
 fire() {
     if [ "$1" = "" ]; then
-        eval "cd ~/🔥"
+        eval "cd ~/Code"
     else
-        eval "cd ~/🔥 && j $1"
+        eval "cd ~/Code && j $1"
     fi
 }
 
