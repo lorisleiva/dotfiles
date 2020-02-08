@@ -88,6 +88,7 @@ cask 'quicklook-json'
 
 # Editors and git management
 cask 'github'
+cask 'gitkraken'
 cask 'phpstorm'
 cask 'sublime-text'
 cask 'tower'
@@ -103,7 +104,6 @@ cask 'sequel-pro'
 
 # Graphic design
 cask 'figma'
-cask 'processing'
 cask 'sip'
 
 # Communication
