@@ -16,3 +16,6 @@ source $ZSH/oh-my-zsh.sh
 
 # iTerm shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# The Fuck binary
+eval $(thefuck --alias)
