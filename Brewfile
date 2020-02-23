@@ -117,7 +117,6 @@ cask 'whatsapp'
 
 # Others
 cask 'boom-3d'
-cask 'dofus'
 cask 'spotify'
 cask 'vlc'
 
