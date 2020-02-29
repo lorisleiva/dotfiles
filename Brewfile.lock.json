@@ -754,7 +754,8 @@
             }
           }
         }
-      }
+      },
+      "php@7.4": null
     },
     "cask": {
       "1password": {
@@ -1040,7 +1041,7 @@
       },
       "Trello": {
         "id": "1278508951",
-        "version": "2.11.3"
+        "version": "2.11.4"
       },
       "Unsplash Wallpapers": {
         "id": "1284863847",

@@ -45,6 +45,7 @@ brew 'yarn'
 # PHP
 brew 'composer'
 brew 'php@7.3'
+brew 'php@7.4'
 brew 'php-code-sniffer'
 brew 'pkg-config'
 brew 'imagemagick'

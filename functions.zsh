@@ -155,5 +155,15 @@ homestead() {
 
 bundle() {
     brew bundle --file="$DOTFILES/Brewfile"
-    brew link php@7.3 --force
+    php73
+}
+
+php73() {
+    brew unlink php@7.4
+    brew link --force php@7.3
+}
+
+php74() {
+    brew unlink php@7.3
+    brew link --force php@7.4
 }
