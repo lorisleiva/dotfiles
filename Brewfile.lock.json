@@ -755,7 +755,11 @@
           }
         }
       },
-      "php@7.4": null
+      "php@7.4": null,
+      "rabbitmq": {
+        "version": "3.8.2",
+        "bottle": false
+      }
     },
     "cask": {
       "1password": {

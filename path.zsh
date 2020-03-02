@@ -9,5 +9,8 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # VS Code
 export PATH="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH"
 
+# RabbitMQ
+export PATH="$PATH:/usr/local/opt/rabbitmq/sbin"
+
 # Local bin directories
 export PATH="./bin:./vendor/bin:$PATH"
