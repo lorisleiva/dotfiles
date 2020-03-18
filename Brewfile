@@ -52,7 +52,7 @@ brew 'imagemagick'
 
 # Database & servers
 brew 'dnsmasq'
-brew 'mariadb'
+brew 'mysql@5.7'
 brew 'nginx'
 brew 'rabbitmq'
 brew 'redis'
