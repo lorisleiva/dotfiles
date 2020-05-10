@@ -4,6 +4,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
 tap 'homebrew/services'
 tap 'blendle/blendle'
+tap 'mongodb/brew'
 
 # ------------------------------------------------------------------------------
 # Command line interface from brew
@@ -57,6 +58,7 @@ brew 'imagemagick'
 
 # Database & servers
 brew 'dnsmasq'
+brew 'mongodb-community@4.2'
 brew 'mysql@5.7'
 brew 'nginx'
 brew 'rabbitmq'
