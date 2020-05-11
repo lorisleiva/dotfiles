@@ -155,6 +155,7 @@ homestead() {
 
 bundle() {
     brew bundle --file="$DOTFILES/Brewfile"
+    brew link --force mysql@5.7
     php73
 }
 
