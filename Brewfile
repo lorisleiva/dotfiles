@@ -86,7 +86,7 @@ cask 'screenflow'
 
 # Browsers and drives
 cask 'firefox'
-cask 'google-backup-and-sync'
+cask 'insync'
 cask 'google-chrome'
 
 # Productivity

@@ -1130,6 +1130,12 @@
         "options": {
           "full_name": "amethyst"
         }
+      },
+      "insync": {
+        "version": "3.1.6.40808",
+        "options": {
+          "full_name": "insync"
+        }
       }
     },
     "mas": {
