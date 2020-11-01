@@ -40,22 +40,6 @@ git config --global core.excludesfile $DOTFILES/.gitignore_global
 chsh -s $(which zsh)
 
 # ------------------------------------------------------------------------------
-#  Restore configurations with mackup.
-# ------------------------------------------------------------------------------
-
-ln -sf $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
-[ -e $HOME/.mackup ] || ln -s $DOTFILES/.mackup $HOME/.mackup
-
-while true; do
-    read -p "Are you ready to run \"mackup restore\"?" yn
-    case $yn in
-        [Yy]* ) mackup restore; break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
-
-# ------------------------------------------------------------------------------
 #  Install Composer dependencies.
 # ------------------------------------------------------------------------------
 

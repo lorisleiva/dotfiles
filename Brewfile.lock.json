@@ -1141,15 +1141,15 @@
     "mas": {
       "Bear": {
         "id": "1091189122",
-        "version": "1.7.13"
+        "version": "1.7.21"
       },
       "Magnet": {
         "id": "441258766",
-        "version": "2.4.6"
+        "version": "2.4.9"
       },
       "Spark": {
         "id": "1176895641",
-        "version": "2.8.1"
+        "version": "2.9.9"
       },
       "Trello": {
         "id": "1278508951",
@@ -1168,8 +1168,8 @@
         "HOMEBREW_PREFIX": "/usr/local",
         "Homebrew/homebrew-core": "e33e3cbe24a510b331eef007b73829df2c621d30",
         "CLT": "",
-        "Xcode": "11.4.1",
-        "macOS": "10.15.5"
+        "Xcode": "12.0.1",
+        "macOS": "10.15.7"
       }
     }
   }
