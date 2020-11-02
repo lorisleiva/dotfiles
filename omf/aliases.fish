@@ -55,20 +55,15 @@ alias ping='prettyping --nolegend'
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 
 # Quick functions
-alias reload="exec ${SHELL} -l"
+alias reload="exec $SHELL -l"
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume output volume 80'"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
-# HTTP request helpers
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-    alias "${method}"="lwp-request -m '${method}'"
-done
-
 # Miscellaneous getters
 alias week='date +%V'
-alias path='echo -e ${PATH//:/\\n}'
+alias path="string replace -r -a ':' '\\n' $PATH"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias iplocal="ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print \$2}'"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
