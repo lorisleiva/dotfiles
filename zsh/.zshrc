@@ -5,10 +5,10 @@ export EDITOR=code
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault-password
 
 # Oh my zsh configurations.
-ZSH_THEME="cloud"
-ZSH_CUSTOM=$DOTFILES
+ZSH_THEME=""
+ZSH_CUSTOM=$DOTFILES/zsh
 unsetopt nomatch
-plugins=()
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Autojump
@@ -19,3 +19,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # The Fuck binary
 eval $(thefuck --alias)
+
+# https://github.com/sindresorhus/pure
+autoload -U promptinit; promptinit
+prompt pure
