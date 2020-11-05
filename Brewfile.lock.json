@@ -855,7 +855,28 @@
           }
         }
       },
-      "mongodb-community@4.2": null
+      "mongodb-community@4.2": null,
+      "gh": {
+        "version": "0.8.0",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/gh-0.8.0.catalina.bottle.tar.gz",
+              "sha256": "572150e8133f195e9c1ec6c1a76454075e60288959df8640d7b90b784a9a6a96"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/gh-0.8.0.mojave.bottle.tar.gz",
+              "sha256": "3858f26d0911724f57ab70ebd7aa92ffeff66f01d6a9ffcb87300a39faca4c94"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/gh-0.8.0.high_sierra.bottle.tar.gz",
+              "sha256": "21207ad29d1b31ec855c5b84125eee859c8ed616730b6408a1877e1b6c7135e5"
+            }
+          }
+        }
+      }
     },
     "cask": {
       "1password": {

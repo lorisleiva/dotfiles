@@ -19,6 +19,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # The Fuck binary
 eval $(thefuck --alias)
+eval "$(gh completion -s zsh)"
 
 # https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
