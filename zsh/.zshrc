@@ -24,6 +24,3 @@ eval "$(gh completion -s zsh)"
 # https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
 prompt pure
-
-# GPG
-export GPG_TTY=$(tty)

@@ -1178,6 +1178,12 @@
         "options": {
           "full_name": "insync"
         }
+      },
+      "gpg-suite": {
+        "version": "2019.2",
+        "options": {
+          "full_name": "gpg-suite"
+        }
       }
     },
     "mas": {
