@@ -876,6 +876,27 @@
             }
           }
         }
+      },
+      "gnupg": {
+        "version": "2.2.20",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.20.catalina.bottle.tar.gz",
+              "sha256": "527ac31afe998a9931a6648c6fcc7288462ae73d6e6e8b84ecf46561c82d50ec"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.20.mojave.bottle.tar.gz",
+              "sha256": "e826cf4b1764da749eba007097be8077f433e52d8f96405044e57a384b114942"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.20.high_sierra.bottle.tar.gz",
+              "sha256": "179b68a29fe9f6731a294a674fbd439623acf22c1997c68b6358808adc83b763"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -1166,11 +1187,11 @@
       },
       "Magnet": {
         "id": "441258766",
-        "version": "2.4.9"
+        "version": "2.5.0"
       },
       "Spark": {
         "id": "1176895641",
-        "version": "2.9.9"
+        "version": "2.9.10"
       },
       "Trello": {
         "id": "1278508951",
@@ -1189,7 +1210,7 @@
         "HOMEBREW_PREFIX": "/usr/local",
         "Homebrew/homebrew-core": "e33e3cbe24a510b331eef007b73829df2c621d30",
         "CLT": "",
-        "Xcode": "12.0.1",
+        "Xcode": "12.2",
         "macOS": "10.15.7"
       }
     }
