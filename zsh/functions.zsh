@@ -156,7 +156,7 @@ homestead() {
 bundle() {
     brew bundle --file="$DOTFILES/Brewfile"
     brew link --force mysql@5.7
-    php73
+    php74
 }
 
 php73() {
@@ -165,6 +165,11 @@ php73() {
 }
 
 php74() {
-    brew unlink php@7.3
+    brew unlink php@8.0
     brew link --force php@7.4
+}
+
+php8() {
+    brew unlink php@7.4
+    brew link --force php@8.0
 }
