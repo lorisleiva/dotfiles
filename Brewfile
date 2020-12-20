@@ -4,7 +4,6 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
 tap 'homebrew/services'
 tap 'blendle/blendle'
-tap 'mongodb/brew'
 
 # ------------------------------------------------------------------------------
 # Command line interface from brew
@@ -33,6 +32,7 @@ brew 'fzf'
 brew 'gh'
 brew 'git'
 brew 'gnupg'
+brew 'gpg'
 brew 'graphviz'
 brew 'helm'
 brew 'httpie'
@@ -54,6 +54,7 @@ brew 'yarn'
 brew 'composer'
 brew 'php@7.3'
 brew 'php@7.4'
+brew 'php@8.0'
 brew 'php-code-sniffer'
 brew 'pkg-config'
 brew 'imagemagick'
@@ -81,9 +82,7 @@ cask 'cheatsheet'
 cask 'daisydisk'
 cask 'flux'
 cask 'gpg-suite'
-cask 'kap'
 cask 'numi'
-cask 'rocket'
 cask 'screenflow'
 
 # Browsers and drives
@@ -95,18 +94,10 @@ cask 'google-chrome'
 cask 'anylist'
 cask 'notion'
 
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'qlstephen'
-cask 'quicklook-json'
-
 # Editors and git management
 cask 'github'
-cask 'gitkraken'
 cask 'phpstorm'
 cask 'sublime-text'
-cask 'tower'
 cask 'visual-studio-code'
 
 # Development
@@ -115,7 +106,6 @@ cask 'insomnia'
 cask 'iterm2'
 cask 'java'
 cask 'postman'
-cask 'sequel-pro'
 
 # Graphic design
 cask 'figma'
@@ -123,13 +113,10 @@ cask 'sip'
 
 # Communication
 cask 'signal'
-cask 'skype'
 cask 'slack'
-cask 'twist'
 cask 'whatsapp'
 
 # Others
-cask 'boom-3d'
 cask 'spotify'
 cask 'vlc'
 
@@ -140,5 +127,4 @@ cask 'vlc'
 mas 'Bear', id: 1091189122
 mas 'Magnet', id: 441258766
 mas 'Spark', id: 1176895641
-mas 'Trello', id: 1278508951
 mas 'Unsplash Wallpapers', id: 1284863847
