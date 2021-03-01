@@ -2,19 +2,19 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "a374cc7c02e71cbb78b50510587f7163eeaefdc1"
+        "revision": "b8b5bdb46cc45b7be5f305654a145473469d19d0"
       },
       "homebrew/cask": {
-        "revision": "ac3550fb38da89cd8eb43630d73be55476ba02a6"
+        "revision": "0896e45cd5f60e29df8038b4dce5fce983d33c17"
       },
       "homebrew/cask-versions": {
-        "revision": "f8a8e4ede60a86bd042983f646018ff85ce7b85e"
+        "revision": "1f3152cfb02d048751e3485868a51e1c43b13c39"
       },
       "homebrew/services": {
-        "revision": "6e1ec6f5797e7b841a697929ed09fc8756b59cdd"
+        "revision": "31bb79235694bdd39143843fae37bdfb297cc5cd"
       },
       "blendle/blendle": {
-        "revision": "c735c7609ece8eb970f0f411f9eb0a532845dc78"
+        "revision": "b72bcb07dd70736c0b929faed526d963099c4c05"
       },
       "mongodb/brew": {
         "revision": "1bc63bca35f251ad6ad9874cece10f1cfca475d5"
@@ -24,8 +24,10 @@
       "zsh": {
         "version": "5.8_1",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/zsh-5.8_1.big_sur.bottle.tar.gz",
@@ -57,8 +59,10 @@
       "fish": {
         "version": "3.1.2",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/fish-3.1.2.big_sur.bottle.tar.gz",
@@ -82,8 +86,10 @@
       "coreutils": {
         "version": "8.32",
         "bottle": {
+          "rebuild": 1,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/coreutils-8.32.big_sur.bottle.1.tar.gz",
@@ -107,8 +113,10 @@
       "findutils": {
         "version": "4.7.0",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/findutils-4.7.0.big_sur.bottle.tar.gz",
@@ -136,8 +144,10 @@
       "bash": {
         "version": "5.1.4",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/bash-5.1.4.big_sur.bottle.tar.gz",
@@ -157,8 +167,10 @@
       "grep": {
         "version": "3.6",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/grep-3.6.big_sur.bottle.tar.gz",
@@ -182,8 +194,10 @@
       "telnet": {
         "version": "63",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/telnet-63.big_sur.bottle.tar.gz",
@@ -215,8 +229,10 @@
       "git": {
         "version": "2.29.2",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/git-2.29.2.big_sur.bottle.tar.gz",
@@ -244,8 +260,10 @@
       "graphviz": {
         "version": "2.44.1",
         "bottle": {
+          "rebuild": 1,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/graphviz-2.44.1.big_sur.bottle.1.tar.gz",
@@ -265,8 +283,10 @@
       "tree": {
         "version": "1.8.0",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/tree-1.8.0.big_sur.bottle.tar.gz",
@@ -315,8 +335,10 @@
       "mas": {
         "version": "1.7.1",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/mas-1.7.1.big_sur.bottle.tar.gz",
@@ -336,8 +358,10 @@
       "wget": {
         "version": "1.20.3_2",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/wget-1.20.3_2.big_sur.bottle.tar.gz",
@@ -361,8 +385,10 @@
       "tldr": {
         "version": "1.3.0_2",
         "bottle": {
+          "rebuild": 1,
           "cellar": ":any",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/tldr-1.3.0_2.big_sur.bottle.1.tar.gz",
@@ -386,8 +412,10 @@
       "autojump": {
         "version": "22.5.3_2",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/autojump-22.5.3_2.big_sur.bottle.tar.gz",
@@ -419,8 +447,10 @@
       "php@7.3": {
         "version": "7.3.25_1",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/php%407.3-7.3.25_1.big_sur.bottle.tar.gz",
@@ -444,8 +474,10 @@
       "pkg-config": {
         "version": "0.29.2_3",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/pkg-config-0.29.2_3.big_sur.bottle.tar.gz",
@@ -473,8 +505,10 @@
       "imagemagick": {
         "version": "7.0.10-52",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/imagemagick-7.0.10-52.big_sur.bottle.tar.gz",
@@ -492,10 +526,12 @@
         }
       },
       "dnsmasq": {
-        "version": "2.80",
+        "version": "2.82",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/dnsmasq-2.82.big_sur.bottle.tar.gz",
@@ -540,8 +576,10 @@
       "nginx": {
         "version": "1.19.5",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/nginx-1.19.5.big_sur.bottle.tar.gz",
@@ -561,8 +599,10 @@
       "redis": {
         "version": "6.0.9",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/redis-6.0.9.big_sur.bottle.tar.gz",
@@ -588,10 +628,12 @@
         }
       },
       "sqlite": {
-        "version": "3.31.1",
+        "version": "3.34.0",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/sqlite-3.34.0.big_sur.bottle.tar.gz",
@@ -615,8 +657,10 @@
       "ansible": {
         "version": "2.10.4",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/ansible-2.10.4.big_sur.bottle.tar.gz",
@@ -636,8 +680,10 @@
       "tmux": {
         "version": "3.1c_1",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/tmux-3.1c_1.big_sur.bottle.tar.gz",
@@ -661,8 +707,10 @@
       "tmuxinator": {
         "version": "2.0.2",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/tmuxinator-2.0.2.big_sur.bottle.tar.gz",
@@ -686,8 +734,10 @@
       "watch": {
         "version": "3.3.16",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/watch-3.3.16.big_sur.bottle.tar.gz",
@@ -711,8 +761,10 @@
       "bat": {
         "version": "0.17.1",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/bat-0.17.1.big_sur.bottle.tar.gz",
@@ -732,8 +784,10 @@
       "fzf": {
         "version": "0.24.4",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/fzf-0.24.4.big_sur.bottle.tar.gz",
@@ -757,8 +811,10 @@
       "httpie": {
         "version": "2.3.0",
         "bottle": {
+          "rebuild": 1,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/httpie-2.3.0.big_sur.bottle.1.tar.gz",
@@ -782,8 +838,10 @@
       "thefuck": {
         "version": "3.30_1",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/thefuck-3.30_1.big_sur.bottle.tar.gz",
@@ -807,8 +865,10 @@
       "php@7.4": {
         "version": "7.4.13_1",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/php%407.4-7.4.13_1.big_sur.bottle.tar.gz",
@@ -832,8 +892,10 @@
       "mysql@5.7": {
         "version": "5.7.32",
         "bottle": {
+          "rebuild": 2,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/mysql%405.7-5.7.32.big_sur.bottle.2.tar.gz",
@@ -853,8 +915,10 @@
       "hugo": {
         "version": "0.79.1",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/hugo-0.79.1.big_sur.bottle.tar.gz",
@@ -874,8 +938,10 @@
       "doctl": {
         "version": "1.54.0",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/doctl-1.54.0.big_sur.bottle.tar.gz",
@@ -899,8 +965,10 @@
       "stern": {
         "version": "1.13.1",
         "bottle": {
+          "rebuild": 1,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/stern-1.13.1.big_sur.bottle.1.tar.gz",
@@ -920,8 +988,10 @@
       "helm": {
         "version": "3.4.2",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/helm-3.4.2.big_sur.bottle.tar.gz",
@@ -945,8 +1015,10 @@
       "gh": {
         "version": "1.4.0",
         "bottle": {
+          "rebuild": 0,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/gh-1.4.0.big_sur.bottle.tar.gz",
@@ -966,8 +1038,10 @@
       "gnupg": {
         "version": "2.2.25",
         "bottle": {
+          "rebuild": 0,
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "big_sur": {
               "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.25.big_sur.bottle.tar.gz",
@@ -984,18 +1058,62 @@
           }
         }
       },
-      "php@8.0": null,
-      "gpg": null
+      "php@8.0": {
+        "version": "8.0.0_1",
+        "bottle": {
+          "rebuild": 0,
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/php-8.0.0_1.big_sur.bottle.tar.gz",
+              "sha256": "fb9e9a8db2d02ec3e80882d7f42894dde0c5a3f0d27990a3e365e470ff4ef63c"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/php-8.0.0_1.catalina.bottle.tar.gz",
+              "sha256": "b1453e4e8e9ad95ec36c6e97bd2b3e0773a62d52b84a568ce26f1ccb97bc1bc6"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/php-8.0.0_1.mojave.bottle.tar.gz",
+              "sha256": "7bd4b3ef362185ae7e7918b04d5bc40f4ed3fd533b8dbefbebceead4b2b82393"
+            }
+          }
+        }
+      },
+      "gpg": {
+        "version": "2.2.25",
+        "bottle": {
+          "rebuild": 0,
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.25.big_sur.bottle.tar.gz",
+              "sha256": "3ab1ff613051228f307f78c6a778b75c5beff4760b32131f721665ee70fa02f6"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.25.catalina.bottle.tar.gz",
+              "sha256": "e83df11a76b0cf28271c4d30c04301653cd744b15a0d9b5bd871c1231b05265b"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.25.mojave.bottle.tar.gz",
+              "sha256": "a48a8a975fe86573024c11e65d010587aa533ede9d3ecb395717cfe4fb2d6cfd"
+            }
+          }
+        }
+      }
     },
     "cask": {
       "1password": {
-        "version": "7.2.1",
+        "version": "7.7",
         "options": {
           "full_name": "1password"
         }
       },
       "alfred": {
-        "version": "4.0.8_1135",
+        "version": "4.3.2,1221",
         "options": {
           "full_name": "alfred"
         }
@@ -1007,31 +1125,31 @@
         }
       },
       "bartender": {
-        "version": "3.0.47",
+        "version": "4.0.35,40035",
         "options": {
           "full_name": "bartender"
         }
       },
       "daisydisk": {
-        "version": "4.6.5.1",
+        "version": "4.12.1",
         "options": {
           "full_name": "daisydisk"
         }
       },
       "flux": {
-        "version": "39.9871",
+        "version": "41.1",
         "options": {
           "full_name": "flux"
         }
       },
       "numi": {
-        "version": "3.19,253:1537544968",
+        "version": "3.30.690",
         "options": {
           "full_name": "numi"
         }
       },
       "screenflow": {
-        "version": "8.1",
+        "version": "9.0.7,31680",
         "options": {
           "full_name": "screenflow"
         }
@@ -1043,7 +1161,7 @@
         }
       },
       "firefox": {
-        "version": "62.0.3",
+        "version": "86.0",
         "options": {
           "full_name": "firefox"
         }
@@ -1055,7 +1173,7 @@
         }
       },
       "google-chrome": {
-        "version": "70.0.3538.67",
+        "version": "88.0.4324.192,4324.192",
         "options": {
           "full_name": "google-chrome"
         }
@@ -1085,37 +1203,37 @@
         }
       },
       "github": {
-        "version": "1.4.3-f0beb6ed",
+        "version": "2.6.3-51b58c36",
         "options": {
           "full_name": "github"
         }
       },
       "sublime-text": {
-        "version": "3.176",
+        "version": "3.211",
         "options": {
           "full_name": "sublime-text"
         }
       },
       "visual-studio-code": {
-        "version": "1.28.2,7f3ce96ff4729c91352ae6def877e59c561f4850",
+        "version": "1.53.2",
         "options": {
           "full_name": "visual-studio-code"
         }
       },
       "docker": {
-        "version": "18.06.1-ce-mac73,26764",
+        "version": "3.1.0,51484",
         "options": {
           "full_name": "docker"
         }
       },
       "insomnia": {
-        "version": "6.0.2",
+        "version": "2020.5.2",
         "options": {
           "full_name": "insomnia"
         }
       },
       "iterm2": {
-        "version": "3.2.3",
+        "version": "3.4.4",
         "options": {
           "full_name": "iterm2"
         }
@@ -1127,7 +1245,7 @@
         }
       },
       "postman": {
-        "version": "6.4.4",
+        "version": "8.0.6",
         "options": {
           "full_name": "postman"
         }
@@ -1139,7 +1257,7 @@
         }
       },
       "figma": {
-        "version": "latest",
+        "version": "95.7.0",
         "options": {
           "full_name": "figma"
         }
@@ -1160,7 +1278,7 @@
         }
       },
       "signal": {
-        "version": "1.17.0",
+        "version": "1.40.1",
         "options": {
           "full_name": "signal"
         }
@@ -1172,25 +1290,25 @@
         }
       },
       "slack": {
-        "version": "3.3.3",
+        "version": "4.13.0",
         "options": {
           "full_name": "slack"
         }
       },
       "spotify": {
-        "version": "latest",
+        "version": "1.1.52.687.gf5565fe5,1.1.52.687.gf5565fe5-30",
         "options": {
           "full_name": "spotify"
         }
       },
       "vlc": {
-        "version": "3.0.4",
+        "version": "3.0.12",
         "options": {
           "full_name": "vlc"
         }
       },
       "whatsapp": {
-        "version": "0.3.1242",
+        "version": "2.2106.10",
         "options": {
           "full_name": "whatsapp"
         }
@@ -1202,19 +1320,19 @@
         }
       },
       "anylist": {
-        "version": "1.1",
+        "version": "1.1,2",
         "options": {
           "full_name": "anylist"
         }
       },
       "sip": {
-        "version": "2.2.2",
+        "version": "2.5.2,252",
         "options": {
           "full_name": "sip"
         }
       },
       "notion": {
-        "version": "2.0.7",
+        "version": "2.0.14",
         "options": {
           "full_name": "notion"
         }
@@ -1232,7 +1350,7 @@
         "version": "1.63.4"
       },
       "phpstorm": {
-        "version": "2019.3.1,193.5662.63",
+        "version": "2020.3.2",
         "options": {
           "full_name": "phpstorm"
         }
@@ -1262,13 +1380,13 @@
         }
       },
       "insync": {
-        "version": "3.1.6.40808",
+        "version": "3.3.4.40916",
         "options": {
           "full_name": "insync"
         }
       },
       "gpg-suite": {
-        "version": "2019.2",
+        "version": "2020.2",
         "options": {
           "full_name": "gpg-suite"
         }
@@ -1285,7 +1403,7 @@
       },
       "Spark": {
         "id": "1176895641",
-        "version": "2.9.12"
+        "version": "2.9.15"
       },
       "Trello": {
         "id": "1278508951",
@@ -1293,7 +1411,7 @@
       },
       "Unsplash Wallpapers": {
         "id": "1284863847",
-        "version": "1.4.2"
+        "version": "1.4.4"
       }
     }
   },
@@ -1308,12 +1426,12 @@
         "macOS": "10.15.7"
       },
       "big_sur": {
-        "HOMEBREW_VERSION": "2.6.2",
+        "HOMEBREW_VERSION": "3.0.2",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "e190d5ba64049ee7b0829ff204b29175a18dbf74",
+        "Homebrew/homebrew-core": "7dda5907ef2b7f64f9a82d1fbed6c730c3e99de3",
         "CLT": "",
-        "Xcode": "12.3",
-        "macOS": "11.0.1"
+        "Xcode": "12.4",
+        "macOS": "11.2.1"
       }
     }
   }

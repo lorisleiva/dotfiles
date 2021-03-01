@@ -75,7 +75,6 @@ brew 'sqlite'
 # Utils
 cask '1password'
 cask 'alfred'
-cask 'amethyst'
 cask 'avibrazil-rdm'
 cask 'bartender'
 cask 'cheatsheet'
@@ -125,6 +124,4 @@ cask 'vlc'
 # ------------------------------------------------------------------------------
 
 mas 'Bear', id: 1091189122
-mas 'Magnet', id: 441258766
 mas 'Spark', id: 1176895641
-mas 'Unsplash Wallpapers', id: 1284863847
