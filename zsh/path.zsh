@@ -12,5 +12,8 @@ export PATH="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$
 # RabbitMQ
 export PATH="$PATH:/usr/local/opt/rabbitmq/sbin"
 
+# DotNet for Unity
+export PATH="$PATH:/usr/local/share/dotnet"
+
 # Local bin directories
 export PATH="./bin:./vendor/bin:$PATH"
