@@ -6,9 +6,6 @@ export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sb
 # Global composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-# Cargo / Rust
-export PATH="$HOME/.cargo/bin:$PATH"
-
 # VS Code
 export PATH="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH"
 
@@ -17,6 +14,12 @@ export PATH="/usr/local/opt/rabbitmq/sbin:$PATH"
 
 # DotNet for Unity
 export PATH="/usr/local/share/dotnet:$PATH"
+
+# Cargo / Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Solana
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 
 # Local bin directories
 export PATH="./bin:./vendor/bin:$PATH"
