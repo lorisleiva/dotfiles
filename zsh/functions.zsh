@@ -4,14 +4,6 @@ mkd() {
     mkdir -p "$@" && cd "$_";
 }
 
-fire() {
-    if [ "$1" = "" ]; then
-        eval "cd ~/Code"
-    else
-        eval "cd ~/Code && j $1"
-    fi
-}
-
 commit() {
     commitMessage="$1"
 
