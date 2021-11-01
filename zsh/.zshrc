@@ -17,10 +17,11 @@ source $ZSH/oh-my-zsh.sh
 # iTerm shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# The Fuck binary
-eval $(thefuck --alias)
+# Homebrew binaries
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(thefuck --alias)"
 eval "$(gh completion -s zsh)"
 
 # https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
-prompt pure
+#prompt pure
