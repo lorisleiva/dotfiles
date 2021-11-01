@@ -99,6 +99,22 @@ o() {
     fi;
 }
 
+c() {
+    if [ $# -eq 0 ]; then
+        code .;
+    else
+        code "$@";
+    fi;
+}
+
+pstorm() {
+    if [ $# -eq 0 ]; then
+        phpstorm .;
+    else
+        phpstorm "$@";
+    fi;
+}
+
 tre() {
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
@@ -109,18 +125,6 @@ emptytrash() {
     sudo rm -rf /private/var/log/asl/*.asl;
     sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent';
     echo 'Whirrrshhhhhhhcccchhh';
-}
-
-update() {
-    sudo softwareupdate -i -a;
-    brew update; 
-    brew upgrade; 
-    brew cleanup; 
-    npm install npm -g;
-    npm update -g; 
-    sudo gem update --system; 
-    sudo gem update; 
-    sudo gem cleanup;
 }
 
 phpini() {
@@ -155,13 +159,6 @@ homestead() {
 
 bundle() {
     brew bundle --file="$DOTFILES/Brewfile"
-    brew link --force mysql@5.7
-    php74
-}
-
-php73() {
-    brew unlink php@7.4
-    brew link --force php@7.3
 }
 
 php74() {
