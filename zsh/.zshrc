@@ -23,5 +23,6 @@ eval "$(thefuck --alias)"
 eval "$(gh completion -s zsh)"
 
 # https://github.com/sindresorhus/pure
+fpath+=/opt/homebrew/share/zsh/site-functions
 autoload -U promptinit; promptinit
-#prompt pure
+prompt pure
