@@ -51,7 +51,6 @@ brew 'yarn'
 
 # PHP
 brew 'composer'
-brew 'php@7.3'
 brew 'php@7.4'
 brew 'php@8.0'
 brew 'php-code-sniffer'
@@ -60,8 +59,7 @@ brew 'imagemagick'
 
 # Database & servers
 brew 'dnsmasq'
-brew 'mongodb-community@4.2'
-brew 'mysql@5.7'
+brew 'mysql'
 brew 'nginx'
 brew 'rabbitmq'
 brew 'redis'
