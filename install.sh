@@ -4,7 +4,7 @@
 #  Configurations.
 # ------------------------------------------------------------------------------
 
-DOTFILES=$HOME/🔥/dotfiles
+DOTFILES=$HOME/Code/dotfiles
 
 echo "Setting up your Mac..."
 
