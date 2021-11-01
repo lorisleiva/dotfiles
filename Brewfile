@@ -19,7 +19,6 @@ brew 'findutils'
 brew 'bash'
 brew 'grep'
 brew 'telnet'
-brew 'unrar'
 
 # Binaries
 brew 'ack'
@@ -100,7 +99,6 @@ cask 'visual-studio-code'
 cask 'docker'
 cask 'insomnia'
 cask 'iterm2'
-cask 'java'
 cask 'postman'
 
 # Graphic design
