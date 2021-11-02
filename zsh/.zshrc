@@ -12,7 +12,7 @@ plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # GPG
-export GPG_TTY=$(tty)
+#export GPG_TTY=$(tty)
 
 # Autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh

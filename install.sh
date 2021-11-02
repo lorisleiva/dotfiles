@@ -21,6 +21,13 @@ brew tap homebrew/bundle
 brew bundle
 
 # ------------------------------------------------------------------------------
+#  GPG Agent. Avoid having to enter the paraphrase all the time.
+# ------------------------------------------------------------------------------
+
+echo "pinentry-program /opt/homebrew/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf 
+killall gpg-agent
+
+# ------------------------------------------------------------------------------
 #  Install PECL extensions.
 # ------------------------------------------------------------------------------
 
