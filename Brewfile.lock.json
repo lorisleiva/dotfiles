@@ -5,7 +5,7 @@
         "revision": "d4891ce7625a5330a8717904188031dbf2267759"
       },
       "homebrew/cask": {
-        "revision": "edef53e54f154de21677210a36401ba95a6b76bd"
+        "revision": "63e0c53aeb61c4c44a971687ceb2907d6c749dc3"
       },
       "homebrew/cask-versions": {
         "revision": "799ebf3426e1c3bba8d74b5581e2804886b78ab5"
@@ -1881,6 +1881,20 @@
             }
           }
         }
+      },
+      "pure": {
+        "version": "1.18.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/pure/blobs/sha256:887f710732be57d7e483bf26fa821fe70a0f89c489f5e3e6eed2515fc3f8c0f8",
+              "sha256": "887f710732be57d7e483bf26fa821fe70a0f89c489f5e3e6eed2515fc3f8c0f8"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -2210,6 +2224,12 @@
         "options": {
           "full_name": "cleanshot"
         }
+      },
+      "jetbrains-toolbox": {
+        "version": "1.21,1.21.9712",
+        "options": {
+          "full_name": "jetbrains-toolbox"
+        }
       }
     },
     "mas": {
@@ -2256,7 +2276,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "9e38b52e93bf56f2f325653c401fd2e3d5bd0c95",
+        "Homebrew/homebrew-core": "68d3c3d1381159d559ea9b7bc2fd931c7ce70830",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.0",
         "macOS": "12.0.1"

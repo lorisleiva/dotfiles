@@ -149,10 +149,6 @@ homestead() {
     ( cd ~/Homestead && vagrant $* )
 }
 
-bundle() {
-    brew bundle --file="$DOTFILES/Brewfile"
-}
-
 php74() {
     brew unlink php@8.0
     brew link --force php@7.4

@@ -40,6 +40,7 @@ brew 'mas'
 brew 'nvm'
 brew 'pinentry-mac'
 brew 'prettyping'
+brew 'pure'
 brew 'stern'
 brew 'thefuck'
 brew 'tldr'
@@ -93,7 +94,7 @@ cask 'notion'
 
 # Editors and git management
 cask 'github'
-cask 'phpstorm'
+cask 'jetbrains-toolbox'
 cask 'sublime-text'
 cask 'visual-studio-code'
 

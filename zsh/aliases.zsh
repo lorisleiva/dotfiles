@@ -53,6 +53,7 @@ alias mux='tmuxinator'
 alias close='tmux detach-client'
 alias ping='prettyping --nolegend'
 alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias bundle="brew bundle --file=\"$DOTFILES/Brewfile\""
 
 # Quick functions
 alias reload="exec ${SHELL} -l"
