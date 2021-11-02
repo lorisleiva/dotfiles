@@ -50,5 +50,5 @@ chsh -s $(which zsh)
 #  Install Composer dependencies.
 # ------------------------------------------------------------------------------
 
-composer global install
+composer global require laravel/valet
 valet install
