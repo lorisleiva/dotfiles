@@ -2192,6 +2192,18 @@
         "options": {
           "full_name": "hey"
         }
+      },
+      "discord": {
+        "version": "0.0.264",
+        "options": {
+          "full_name": "discord"
+        }
+      },
+      "telegram": {
+        "version": "8.1.4,222346",
+        "options": {
+          "full_name": "telegram"
+        }
       }
     },
     "mas": {
@@ -2238,7 +2250,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "b458370da95ab241a744d4ee992fd5f396cbf99f",
+        "Homebrew/homebrew-core": "c6efab0517cff054b2cc5f27cb4c53601c5b85de",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.0",
         "macOS": "12.0.1"

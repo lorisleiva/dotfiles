@@ -109,8 +109,10 @@ cask 'figma'
 cask 'sip'
 
 # Communication
+cask 'discord'
 cask 'hey'
 cask 'slack'
+cask 'telegram'
 cask 'whatsapp'
 cask 'zoom'
 
