@@ -5,13 +5,13 @@
         "revision": "d4891ce7625a5330a8717904188031dbf2267759"
       },
       "homebrew/cask": {
-        "revision": "dd2a2514251cc21c2fef47705b5e70b78dca2180"
+        "revision": "b6a7d0341b0481c8206f7089047a7a7b8c4587e8"
       },
       "homebrew/cask-versions": {
-        "revision": "5723b01317b271022eedd6c06432f77be3d7ad7a"
+        "revision": "799ebf3426e1c3bba8d74b5581e2804886b78ab5"
       },
       "homebrew/services": {
-        "revision": "b8ea0a9cb3f8b28d8444d46d5b9346fad9333c4a"
+        "revision": "92750bc19797e86fb19cbbe1359de2b28d3d44ba"
       },
       "blendle/blendle": {
         "revision": "3a868e95ed77025c927cef974c057833b3d5523f"
@@ -1866,7 +1866,7 @@
         }
       },
       "daisydisk": {
-        "version": "4.21.3",
+        "version": "4.21.4",
         "options": {
           "full_name": "daisydisk"
         }
@@ -2121,9 +2121,33 @@
         }
       },
       "gpg-suite": {
-        "version": "2021.1,105",
+        "version": "2021.2",
         "options": {
           "full_name": "gpg-suite"
+        }
+      },
+      "tableplus": {
+        "version": "4.5.0,396",
+        "options": {
+          "full_name": "tableplus"
+        }
+      },
+      "dbngin": {
+        "version": "3.4,36",
+        "options": {
+          "full_name": "dbngin"
+        }
+      },
+      "zoom": {
+        "version": "5.8.3.2240",
+        "options": {
+          "full_name": "zoom"
+        }
+      },
+      "hey": {
+        "version": "1.2.2",
+        "options": {
+          "full_name": "hey"
         }
       }
     },
@@ -2171,10 +2195,10 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "93151f9f0e18d6f8bce1265f6d14fe424be23fbf",
+        "Homebrew/homebrew-core": "ff358a5295f5077bea49e04b627482ca31ee16e4",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.0",
-        "macOS": "12.0"
+        "macOS": "12.0.1"
       }
     }
   }

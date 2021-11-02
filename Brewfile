@@ -96,18 +96,21 @@ cask 'visual-studio-code'
 
 # Development
 cask 'docker'
+cask 'dbngin'
 cask 'insomnia'
 cask 'iterm2'
 cask 'postman'
+cask 'tableplus'
 
 # Graphic design
 cask 'figma'
 cask 'sip'
 
 # Communication
-cask 'signal'
+cask 'hey'
 cask 'slack'
 cask 'whatsapp'
+cask 'zoom'
 
 # Others
 cask 'spotify'
