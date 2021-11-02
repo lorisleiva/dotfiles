@@ -5,7 +5,7 @@
         "revision": "d4891ce7625a5330a8717904188031dbf2267759"
       },
       "homebrew/cask": {
-        "revision": "b6a7d0341b0481c8206f7089047a7a7b8c4587e8"
+        "revision": "edef53e54f154de21677210a36401ba95a6b76bd"
       },
       "homebrew/cask-versions": {
         "revision": "799ebf3426e1c3bba8d74b5581e2804886b78ab5"
@@ -2204,6 +2204,12 @@
         "options": {
           "full_name": "telegram"
         }
+      },
+      "cleanshot": {
+        "version": "3.9.3",
+        "options": {
+          "full_name": "cleanshot"
+        }
       }
     },
     "mas": {
@@ -2250,7 +2256,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "c6efab0517cff054b2cc5f27cb4c53601c5b85de",
+        "Homebrew/homebrew-core": "9e38b52e93bf56f2f325653c401fd2e3d5bd0c95",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.0",
         "macOS": "12.0.1"
