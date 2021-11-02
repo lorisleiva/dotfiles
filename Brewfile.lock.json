@@ -5,7 +5,7 @@
         "revision": "d4891ce7625a5330a8717904188031dbf2267759"
       },
       "homebrew/cask": {
-        "revision": "63e0c53aeb61c4c44a971687ceb2907d6c749dc3"
+        "revision": "55e95ed6b6d11054177425884cb65b0e01bb3c50"
       },
       "homebrew/cask-versions": {
         "revision": "799ebf3426e1c3bba8d74b5581e2804886b78ab5"
@@ -2230,6 +2230,18 @@
         "options": {
           "full_name": "jetbrains-toolbox"
         }
+      },
+      "krisp": {
+        "version": "1.28.7",
+        "options": {
+          "full_name": "krisp"
+        }
+      },
+      "pixelsnap": {
+        "version": "2.5",
+        "options": {
+          "full_name": "pixelsnap"
+        }
       }
     },
     "mas": {
@@ -2276,7 +2288,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "68d3c3d1381159d559ea9b7bc2fd931c7ce70830",
+        "Homebrew/homebrew-core": "fac1d9164df23b79b61e0907189559848d89bd94",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.0",
         "macOS": "12.0.1"

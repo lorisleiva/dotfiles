@@ -80,7 +80,9 @@ cask 'cleanshot'
 cask 'daisydisk'
 cask 'flux'
 cask 'gpg-suite'
+cask 'krisp'
 cask 'numi'
+cask 'pixelsnap'
 cask 'screenflow'
 
 # Browsers and drives
