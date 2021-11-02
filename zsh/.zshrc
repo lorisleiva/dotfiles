@@ -22,6 +22,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(thefuck --alias)"
 eval "$(gh completion -s zsh)"
 
+# Nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+# Fuzzy search
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # https://github.com/sindresorhus/pure
 fpath+=/opt/homebrew/share/zsh/site-functions
 autoload -U promptinit; promptinit
