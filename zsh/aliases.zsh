@@ -45,7 +45,7 @@ alias lsd="ls -lh | grep --color=never '^d'"
 # Command manipulations
 alias h="history | tail -10"
 alias copy="tr -d '\n' | pbcopy"
-alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
+alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias map="xargs -n1"
 alias sudo='sudo ' # Enable aliases to be sudo’ed
