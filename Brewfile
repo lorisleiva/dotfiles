@@ -105,6 +105,7 @@ cask 'docker'
 cask 'dbngin'
 cask 'insomnia'
 cask 'iterm2'
+cask 'ngrok'
 cask 'postman'
 cask 'tableplus'
 
