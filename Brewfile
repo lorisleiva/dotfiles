@@ -22,7 +22,6 @@ brew 'telnet'
 
 # Binaries
 brew 'ack'
-brew 'ansible'
 brew 'autojump'
 brew 'bat'
 brew 'doctl'
@@ -37,7 +36,6 @@ brew 'httpie'
 brew 'hugo'
 brew 'kns'
 brew 'mas'
-brew 'nvm'
 brew 'pinentry-mac'
 brew 'prettyping'
 brew 'pure'
@@ -49,7 +47,6 @@ brew 'tmuxinator'
 brew 'tree'
 brew 'watch'
 brew 'wget'
-brew 'yarn'
 
 # PHP
 brew 'composer'
@@ -59,7 +56,14 @@ brew 'php-code-sniffer'
 brew 'pkg-config'
 brew 'imagemagick'
 
+# Development
+brew 'nvm'
+brew 'rust'
+brew 'solana'
+brew 'yarn'
+
 # Database & servers
+brew 'ansible'
 brew 'dnsmasq'
 brew 'mysql'
 brew 'nginx'
