@@ -59,7 +59,6 @@ brew 'imagemagick'
 # Development
 brew 'nvm'
 brew 'rust'
-brew 'solana'
 brew 'yarn'
 
 # Database & servers
