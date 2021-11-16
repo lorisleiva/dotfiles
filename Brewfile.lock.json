@@ -2399,6 +2399,12 @@
         "options": {
           "full_name": "ngrok"
         }
+      },
+      "imageoptim": {
+        "version": "1.8.8",
+        "options": {
+          "full_name": "imageoptim"
+        }
       }
     },
     "mas": {
@@ -2445,7 +2451,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.4",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "cf281a3ffb1e6d08b1512ced91aa012c8ff61af5",
+        "Homebrew/homebrew-core": "82cff9f99659df7875e3edb35e4a7f379802a3bd",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.1",
         "macOS": "12.0.1"
