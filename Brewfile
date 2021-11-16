@@ -17,6 +17,7 @@ brew 'zsh-completions'
 brew 'coreutils'
 brew 'findutils'
 brew 'bash'
+brew 'gifski'
 brew 'grep'
 brew 'telnet'
 
