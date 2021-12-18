@@ -30,7 +30,7 @@ alias g="git"
 alias gs="git status"
 alias gco="git checkout"
 alias gb="git checkout -b"
-alias m="git checkout master && git pull"
+alias m="git checkout main && git pull"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias nah="git reset --hard && git clean -df"
 alias push="git push"
@@ -54,6 +54,7 @@ alias close='tmux detach-client'
 alias ping='prettyping --nolegend'
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias bundle="brew bundle --file=\"$DOTFILES/Brewfile\""
+alias candy-machine="ts-node ~/Code/metaplex/js/packages/cli/src/candy-machine-cli.ts"
 
 # Quick functions
 alias reload="exec ${SHELL} -l"
