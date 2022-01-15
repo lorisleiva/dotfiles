@@ -20,7 +20,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Solana
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
-export PATH="$HOME/Code/solana/bin:$PATH"
 
 # Local bin directories
 export PATH="./bin:./vendor/bin:$PATH"
