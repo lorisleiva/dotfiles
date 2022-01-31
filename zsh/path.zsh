@@ -21,5 +21,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Solana
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 
+# JetBrains Toolbox
+export PATH="$HOME/.local/share/JetBrains/Toolbox/bin:$PATH"
+
 # Local bin directories
 export PATH="./bin:./vendor/bin:$PATH"
