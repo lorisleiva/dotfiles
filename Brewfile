@@ -52,8 +52,8 @@ brew 'wget'
 
 # PHP
 brew 'composer'
-brew 'php@7.4'
 brew 'php@8.0'
+brew 'php@8.1'
 brew 'php-code-sniffer'
 brew 'pkg-config'
 brew 'imagemagick'

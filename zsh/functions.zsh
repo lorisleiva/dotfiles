@@ -149,12 +149,12 @@ homestead() {
     ( cd ~/Homestead && vagrant $* )
 }
 
-php74() {
-    brew unlink php@8.0
-    brew link --force php@7.4
+php80() {
+    brew unlink php@8.1
+    brew link --force php@8.0
 }
 
-php8() {
-    brew unlink php@7.4
-    brew link --force php@8.0
+php81() {
+    brew unlink php@8.0
+    brew link --force php@8.1
 }
