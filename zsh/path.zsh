@@ -25,4 +25,4 @@ export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 export PATH="$HOME/.local/share/JetBrains/Toolbox/bin:$PATH"
 
 # Local bin directories
-export PATH="./bin:./vendor/bin:$PATH"
+export PATH="./bin:./vendor/bin:./node_modules/.bin:$PATH"
