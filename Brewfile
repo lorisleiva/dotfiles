@@ -61,6 +61,7 @@ brew 'imagemagick'
 
 # Development
 brew 'nvm'
+brew 'pnpm'
 brew 'yarn'
 
 # Database & servers
