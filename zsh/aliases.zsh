@@ -19,11 +19,12 @@ alias p="phpunit"
 alias pstop="phpunit --order-by=defects --stop-on-failure"
 alias pfilter="phpunit --filter"
 
-# Npm
+# Npm, Yarn, Pnpm
 alias ni="npm install"
 alias nr="npm run"
 alias w="npm run watch"
 alias hot="npm run hot"
+alias pn="pnpm"
 
 # Git
 alias g="git"
