@@ -25,6 +25,7 @@ alias nr="npm run"
 alias w="npm run watch"
 alias hot="npm run hot"
 alias pn="pnpm"
+alias pni="pnpm install"
 
 # Git
 alias g="git"
