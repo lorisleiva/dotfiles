@@ -24,7 +24,7 @@ brew bundle
 #  GPG Agent. Avoid having to enter the paraphrase all the time.
 # ------------------------------------------------------------------------------
 
-echo "pinentry-program /opt/homebrew/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf 
+echo "pinentry-program /opt/homebrew/bin/pinentry-mac" >>~/.gnupg/gpg-agent.conf
 killall gpg-agent
 
 # ------------------------------------------------------------------------------
@@ -45,6 +45,9 @@ git config --global core.excludesfile $DOTFILES/.gitignore_global
 
 # Use zsh as default shell.
 chsh -s $(which zsh)
+
+# Install Oh My Zsh.
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # ------------------------------------------------------------------------------
 #  Install Composer dependencies.
