@@ -14,7 +14,6 @@ alias cr="composer require"
 alias ci="composer install"
 alias cu="composer update"
 alias cda="composer dump-autoload -o"
-alias mozart="php -d memory_limit=8G composer.phar"
 alias p="phpunit"
 alias pstop="phpunit --order-by=defects --stop-on-failure"
 alias pfilter="phpunit --filter"
@@ -37,7 +36,6 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias nah="git reset --hard && git clean -df"
 alias push="git push"
 alias pull="git pull --rebase"
-alias wip="commit && push"
 
 # List (basic, all, directories)
 alias ll="ls -lh"
@@ -56,12 +54,9 @@ alias close='tmux detach-client'
 alias ping='prettyping --nolegend'
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias bundle="brew bundle --file=\"$DOTFILES/Brewfile\""
-alias candy-machine="ts-node ~/Code/metaplex/js/packages/cli/src/candy-machine-cli.ts"
 
 # Quick functions
 alias reload="exec ${SHELL} -l"
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume output volume 80'"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 

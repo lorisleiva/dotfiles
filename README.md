@@ -1,4 +1,5 @@
 # Dotfiles
+
 ❄️ Personal set of configurations for macOS
 
 1. Git clone wherever
