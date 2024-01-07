@@ -3,6 +3,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/cask-versions'
 tap 'homebrew/services'
 tap 'blendle/blendle'
+tap 'shivammathur/php'
 
 # ------------------------------------------------------------------------------
 # Command line interface from brew
@@ -52,8 +53,9 @@ brew 'wget'
 
 # PHP
 brew 'composer'
-brew 'php@8.0'
+brew 'shivammathur/php/php@8.0'
 brew 'php@8.1'
+brew 'php@8.2'
 brew 'php-code-sniffer'
 brew 'pkg-config'
 brew 'imagemagick'
@@ -77,7 +79,6 @@ brew 'sqlite'
 # ------------------------------------------------------------------------------
 
 # Utils
-cask 'avibrazil-rdm'
 cask 'bartender'
 cask 'cleanshot'
 cask 'daisydisk'
