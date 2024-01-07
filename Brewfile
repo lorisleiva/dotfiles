@@ -78,21 +78,19 @@ brew 'sqlite'
 # ------------------------------------------------------------------------------
 
 # Utils
-cask 'alfred'
 cask 'avibrazil-rdm'
 cask 'bartender'
-cask 'cheatsheet'
 cask 'cleanshot'
 cask 'daisydisk'
 cask 'flux'
 cask 'gpg-suite'
 cask 'imageoptim'
-cask 'krisp'
 cask 'numi'
 cask 'pixelsnap'
 cask 'screenflow'
 
 # Browsers and drives
+cask 'arc'
 cask 'firefox'
 cask 'insync'
 cask 'google-chrome'
@@ -122,7 +120,6 @@ cask 'sip'
 
 # Communication
 cask 'discord'
-cask 'hey'
 cask 'slack'
 cask 'telegram'
 cask 'whatsapp'
