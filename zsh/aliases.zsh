@@ -59,6 +59,7 @@ alias bundle="brew bundle --file=\"$DOTFILES/Brewfile\""
 alias reload="exec ${SHELL} -l"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+alias prunenodemodules="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
 
 # HTTP request helpers
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
