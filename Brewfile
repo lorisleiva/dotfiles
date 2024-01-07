@@ -87,12 +87,12 @@ cask 'gpg-suite'
 cask 'imageoptim'
 cask 'numi'
 cask 'pixelsnap'
+cask 'raycast'
 cask 'screenflow'
 
 # Browsers and drives
 cask 'arc'
 cask 'firefox'
-cask 'insync'
 cask 'google-chrome'
 
 # Productivity
