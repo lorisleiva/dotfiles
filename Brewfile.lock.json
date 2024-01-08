@@ -2904,6 +2904,12 @@
         "options": {
           "full_name": "raycast"
         }
+      },
+      "moom": {
+        "version": "3.2.25",
+        "options": {
+          "full_name": "moom"
+        }
       }
     },
     "mas": {
