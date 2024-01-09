@@ -1,9 +1,10 @@
 # Taps
+tap 'blendle/blendle'
 tap 'homebrew/bundle'
 tap 'homebrew/cask-versions'
 tap 'homebrew/services'
-tap 'blendle/blendle'
 tap 'shivammathur/php'
+tap 'withgraphite/tap'
 
 # ------------------------------------------------------------------------------
 # Command line interface from brew
@@ -31,6 +32,7 @@ brew 'gh'
 brew 'git'
 brew 'gnupg'
 brew 'gpg'
+brew 'withgraphite/tap/graphite'
 brew 'graphviz'
 brew 'helm'
 brew 'httpie'
