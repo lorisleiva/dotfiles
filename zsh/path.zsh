@@ -20,6 +20,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Solana
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH" # Override tar binary for Solana.
 
 # JetBrains Toolbox
 export PATH="$HOME/.local/share/JetBrains/Toolbox/bin:$PATH"
