@@ -85,6 +85,7 @@ brew 'sqlite'
 cask 'bartender'
 cask 'cleanshot'
 cask 'daisydisk'
+cask "elgato-control-center"
 cask 'flux'
 cask 'gpg-suite'
 cask 'imageoptim'
