@@ -4,6 +4,9 @@ export ZSH=$HOME/.oh-my-zsh
 export EDITOR=code
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault-password
 
+# Disables telemetry everywhere.
+export DO_NOT_TRACK=1
+
 # Oh my zsh configurations.
 ZSH_THEME=""
 ZSH_CUSTOM=$DOTFILES/zsh
