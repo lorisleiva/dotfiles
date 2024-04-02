@@ -128,6 +128,7 @@ cask 'sip'
 
 # Communication
 cask 'discord'
+cask 'signal'
 cask 'slack'
 cask 'telegram'
 cask 'whatsapp'
