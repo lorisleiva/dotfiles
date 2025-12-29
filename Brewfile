@@ -89,7 +89,7 @@ cask 'bartender'
 cask 'cleanshot'
 cask 'daisydisk'
 cask "elgato-control-center"
-cask 'flux'
+cask 'flux-app'
 cask 'gpg-suite'
 cask 'imageoptim'
 cask 'moom'
@@ -114,7 +114,7 @@ cask 'sublime-text'
 cask 'visual-studio-code'
 
 # Development
-cask 'docker'
+cask 'docker-desktop'
 cask 'dbngin'
 cask 'insomnia'
 cask 'iterm2'
@@ -124,7 +124,7 @@ cask 'tableplus'
 
 # Graphic design
 cask 'figma'
-cask 'sip'
+cask 'sip-app'
 
 # Communication
 cask 'discord'
