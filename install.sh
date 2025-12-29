@@ -61,3 +61,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 composer global require laravel/valet
 valet install
+
+# ------------------------------------------------------------------------------
+#  Link Claude settings.
+# ------------------------------------------------------------------------------
+
+ln -s $DOTFILES/.claude $HOME
