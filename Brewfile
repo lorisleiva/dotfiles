@@ -103,6 +103,10 @@ cask 'arc'
 cask 'firefox'
 cask 'google-chrome'
 
+# AI Tools
+cask "claude"
+cask "chatgpt"
+
 # Productivity
 cask 'anylist'
 cask 'notion'
