@@ -14,16 +14,6 @@ archive() {
     zip -r "$1".zip -i "$1"
 }
 
-weather() {
-    city="$1"
-
-    if [ -z "$city" ]; then
-        city="Alhaurin+el+grande"
-    fi
-
-    eval "curl http://wttr.in/${city}"
-}
-
 fs() {
     if du -b /dev/null >/dev/null 2>&1; then
         local arg=-sbh
