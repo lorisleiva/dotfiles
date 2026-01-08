@@ -590,6 +590,7 @@ The `renderVisitor` accepts the following options.
    - Check for existing tests or examples that show usage.
    - Research any related libraries or frameworks that influence usage.
    - If a README is part of a package inside a monorepo, examine any existing READMEs in the other packages to ensure consistency in style and structure.
+   - When dealing with the main README of a monorepo, prefer linking to package-specific READMEs for detailed documentation rather than duplicating content. This main README is very important as it will be the first entrypoint for developers. Focus on providing an overview for the whole monorepo rather than deep-dives into each package.
 
 4. Create or update the README:
 
