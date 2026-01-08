@@ -63,6 +63,7 @@ The layout of a README will vary from project to project, but they should genera
   - **Advanced Usage**: More complex scenarios.
   - **Configuration**: Setup and customization options.
   - **Examples**: Real-world use cases.
+- No need for a "Requirements" section for peer dependencies. Just mention them in the "Installation" section if necessary to get started.
 
 ### Code Snippets
 
@@ -588,6 +589,7 @@ The `renderVisitor` accepts the following options.
    - Identify key exports, main functions, and typical usage patterns.
    - Check for existing tests or examples that show usage.
    - Research any related libraries or frameworks that influence usage.
+   - If a README is part of a package inside a monorepo, examine any existing READMEs in the other packages to ensure consistency in style and structure.
 
 4. Create or update the README:
 
