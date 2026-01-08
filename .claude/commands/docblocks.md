@@ -1,6 +1,6 @@
 ---
 description: Add missing docblocks to exported items in the repository
-argument-hint: [path] [--all]
+argument-hint: "[path] [--all]"
 ---
 
 # Add Missing Docblocks
