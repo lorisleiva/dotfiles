@@ -9,7 +9,7 @@ Scan the specified path (or entire repository if no path given) and add missing 
 
 ## Arguments
 
-- `$1` (optional): Path to narrow the scope (e.g., 'src/utils' or 'packages/umi/src')
+- `$1` (optional): Path to narrow the scope (e.g., 'src/utils' or 'packages/rpc/src')
 - `$2` (optional): Use `--all` flag to include non-exported items
 
 ## Docblock Style Guidelines
