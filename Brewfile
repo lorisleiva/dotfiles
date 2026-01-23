@@ -105,6 +105,7 @@ cask 'google-chrome'
 
 # AI Tools
 cask "claude"
+cask "claude-code"
 cask "chatgpt"
 
 # Productivity
