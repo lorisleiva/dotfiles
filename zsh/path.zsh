@@ -2,6 +2,7 @@
 
 # Global bin directories
 export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/.local/bin:$HOME/.bin:$HOME/bin:$PATH"
 
 # Global composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
