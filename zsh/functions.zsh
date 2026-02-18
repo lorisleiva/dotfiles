@@ -23,6 +23,10 @@ new() {
     fi
 }
 
+daemonize() {
+    "$@" > /dev/null 2>&1 & disown
+}
+
 archive() {
     zip -r "$1".zip -i "$1"
 }
