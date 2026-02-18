@@ -1,12 +1,25 @@
 #!/usr/bin/env bash
 
-mkd() {
-    mkdir -p "$@" && cd "$_"
-}
-
 new() {
-    if [[ $1 =~ "db|database" ]]; then
-        mysql -uroot -e "create database $2;"
+    if [[ $# -eq 0 ]]; then
+        echo "Usage: new [db <name> | file/dir ...]"
+        return 1
+    fi
+
+    # [db|database <name>] creates a new MySQL database with the given name.
+    if [[ $# -eq 2 && $1 =~ ^(db|database)$ ]]; then
+        mysql -uroot -e "create database $2;" && echo "Database '$2' created."
+    # [file/dir ...] creates new files or directories.
+    else
+        for target in "$@"; do
+            if [[ "$target" == */ ]]; then
+                mkdir -p "$target"
+            else
+                local dir="$(dirname "$target")"
+                [[ "$dir" != "." ]] && mkdir -p "$dir"
+                touch "$target"
+            fi
+        done
     fi
 }
 
