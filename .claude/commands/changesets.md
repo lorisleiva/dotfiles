@@ -1,6 +1,7 @@
 ---
 description: Generate a changeset file with a proper changelog entry
 argument-hint: "<patch|minor|major>"
+allowed-tools: Bash(npx changeset add --empty)
 ---
 
 # Generate Changeset
