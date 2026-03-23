@@ -1,7 +1,12 @@
 {
+  "permissions": {
+    "defaultMode": "plan"
+  },
   "model": "opus[1m]",
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": true
   },
+  "effortLevel": "high",
+  "voiceEnabled": false,
   "tips": false
 }

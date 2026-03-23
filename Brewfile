@@ -118,6 +118,7 @@ cask 'jetbrains-toolbox'
 cask 'mactex'
 cask 'sublime-text'
 cask 'visual-studio-code'
+cask 'zed'
 
 # Development
 cask 'docker-desktop'
