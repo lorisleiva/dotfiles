@@ -1,6 +1,7 @@
 {
-  "tips": false,
+  "model": "opus[1m]",
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": true
-  }
+  },
+  "tips": false
 }

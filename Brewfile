@@ -115,6 +115,7 @@ cask 'notion'
 # Editors and git management
 cask 'github'
 cask 'jetbrains-toolbox'
+cask 'mactex'
 cask 'sublime-text'
 cask 'visual-studio-code'
 

@@ -13,6 +13,9 @@ export PATH="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$
 # RabbitMQ
 export PATH="/usr/local/opt/rabbitmq/sbin:$PATH"
 
+# LaTeX
+export PATH="/Library/TeX/texbin:$PATH"
+
 # DotNet for Unity
 export PATH="/usr/local/share/dotnet:$PATH"
 
