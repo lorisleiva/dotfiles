@@ -16,13 +16,16 @@ in
     difftastic
     doctl
     findutils
+    gh
     gifski
-    gnutar
     gnugrep
+    gnutar
     graphviz
     httpie
+    imagemagick
     jq
     prettyping
+    sqlite
     tldr
     tree
     watch
@@ -48,8 +51,8 @@ in
         external = "difft";
         renames = "copies";
       };
-      credential."https://github.com".helper = [ "" "!/opt/homebrew/bin/gh auth git-credential" ];
-      credential."https://gist.github.com".helper = [ "" "!/opt/homebrew/bin/gh auth git-credential" ];
+      credential."https://github.com".helper = [ "" "!gh auth git-credential" ];
+      credential."https://gist.github.com".helper = [ "" "!gh auth git-credential" ];
     };
     ignores = [
       ".DS_Store" ".DS_Store?" "._*" ".Spotlight-V100" ".Trashes"
