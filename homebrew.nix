@@ -27,6 +27,7 @@
       "composer"
       "dnsmasq"
       "flock"
+      "herdr"
       "mas"
       "mysql"
       "neovim"
