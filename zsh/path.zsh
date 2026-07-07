@@ -1,14 +1,11 @@
 # Paths ordered by increasing priority.
 
 # Global bin directories
-export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.local/bin:$HOME/.bin:$HOME/bin:$PATH"
 
 # Global composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-
-# VS Code
-export PATH="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH"
 
 # RabbitMQ
 export PATH="/usr/local/opt/rabbitmq/sbin:$PATH"
@@ -25,9 +22,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Solana
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH" # Override tar binary for Solana.
-
-# JetBrains Toolbox
-export PATH="$HOME/.local/share/JetBrains/Toolbox/bin:$PATH"
 
 # Local bin directories
 export PATH="./bin:./vendor/bin:./node_modules/.bin:$PATH"
