@@ -12,7 +12,14 @@
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
-  outputs = inputs@{ self, nix-darwin, nix-homebrew, home-manager, nixpkgs }:
+  outputs =
+    inputs@{
+      self,
+      nix-darwin,
+      nix-homebrew,
+      home-manager,
+      nixpkgs,
+    }:
     let
       user = "loris";
     in

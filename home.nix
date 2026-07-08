@@ -1,4 +1,9 @@
-{ config, pkgs, user, ... }:
+{
+  config,
+  pkgs,
+  user,
+  ...
+}:
 
 let
   dotfiles = "${config.home.homeDirectory}/.dotfiles";
@@ -24,6 +29,7 @@ in
     httpie
     imagemagick
     jq
+    nixfmt
     prettyping
     sqlite
     tldr
@@ -51,13 +57,26 @@ in
         external = "difft";
         renames = "copies";
       };
-      credential."https://github.com".helper = [ "" "!gh auth git-credential" ];
-      credential."https://gist.github.com".helper = [ "" "!gh auth git-credential" ];
+      credential."https://github.com".helper = [
+        ""
+        "!gh auth git-credential"
+      ];
+      credential."https://gist.github.com".helper = [
+        ""
+        "!gh auth git-credential"
+      ];
     };
     ignores = [
-      ".DS_Store" ".DS_Store?" "._*" ".Spotlight-V100" ".Trashes"
-      "ehthumbs.db" "Thumbs.db"
-      ".idea/" ".vscode" ".nova/"
+      ".DS_Store"
+      ".DS_Store?"
+      "._*"
+      ".Spotlight-V100"
+      ".Trashes"
+      "ehthumbs.db"
+      "Thumbs.db"
+      ".idea/"
+      ".vscode"
+      ".nova/"
     ];
   };
   # programs.starship = {
@@ -80,7 +99,7 @@ in
     oh-my-zsh = {
       enable = true;
       custom = "${dotfiles}/zsh";
-      plugins = [ ];  # the two you had are now handled above
+      plugins = [ ]; # the two you had are now handled above
     };
     initContent = ''
       # env
@@ -120,13 +139,21 @@ in
   '';
 
   # Symlinks to dotfiles.
-  home.file.".config/wezterm".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/wezterm";
-  home.file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/nvim";
-  home.file.".config/herdr".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/herdr";
+  home.file.".config/wezterm".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/wezterm";
+  home.file.".config/nvim".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/nvim";
+  home.file.".config/herdr".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/herdr";
 
-  home.file.".claude/CLAUDE.md".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
-  home.file.".claude/settings.json".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/.claude/settings.json";
-  home.file.".claude/commands".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/.claude/commands";
-  home.file.".codex/AGENTS.md".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
-  home.file.".config/opencode/AGENTS.md".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
+  home.file.".claude/CLAUDE.md".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
+  home.file.".claude/settings.json".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/.claude/settings.json";
+  home.file.".claude/commands".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/.claude/commands";
+  home.file.".codex/AGENTS.md".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
+  home.file.".config/opencode/AGENTS.md".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
 }

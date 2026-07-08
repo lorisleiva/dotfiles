@@ -46,7 +46,10 @@
       "pyenv"
       "python@3.12"
       "rabbitmq"
-      { name = "redis"; restart_service = "changed"; }
+      {
+        name = "redis";
+        restart_service = "changed";
+      }
       "tmux"
       "yarn"
       # tapped formulae (full paths)
