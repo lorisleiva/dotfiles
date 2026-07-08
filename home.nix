@@ -34,6 +34,7 @@ in
     sqlite
     tldr
     tree
+    tree-sitter
     watch
     wget
   ];

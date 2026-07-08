@@ -84,6 +84,14 @@ c() {
     fi
 }
 
+n() {
+    if [ $# -eq 0 ]; then
+        nvim .
+    else
+        nvim "$@"
+    fi
+}
+
 pstorm() {
     if [ $# -eq 0 ]; then
         phpstorm .

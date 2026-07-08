@@ -9,3 +9,4 @@ o.smartcase = true             -- case-sensitive only if i type a capital
 o.clipboard = 'unnamedplus'    -- share the system clipboard
 o.scrolloff = 16               -- keep cursor away from the screen edge
 o.undofile = true              -- persistent undo across sessions
+o.winborder = 'rounded'        -- rounded frame around floats so popups sit clearly on top

@@ -17,7 +17,9 @@ return {
       { '<leader>f', function() Snacks.picker.files() end, desc = 'Find Files' },
       { '<leader>s', function() Snacks.picker.grep() end,  desc = 'Search Text' },
       { '<leader>b', function() Snacks.picker.buffers() end, desc = 'Buffers' },
-      { 'gd', function() Snacks.picker.lsp_definitions() end, desc = 'Goto Definition' },
+      { '<leader>m', function() Snacks.picker.marks() end, desc = 'Marks' },
+      -- Note: `gd` (Goto Definition) is defined buffer-locally on LspAttach
+      -- in plugins/lsp.lua, so it only maps where an LSP is available.
     },
   },
 }
