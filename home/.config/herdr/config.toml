@@ -6,6 +6,7 @@ focus_pane_left  = "prefix+h"
 focus_pane_down  = "prefix+j"
 focus_pane_up    = "prefix+k"
 focus_pane_right = "prefix+l"
+next_agent       = "prefix+a"  # cycle to the next agent (prefix is ctrl+a, so: ctrl+a then a)
 split_horizontal = "prefix+double_quote"
 split_vertical   = "prefix+percent"
 new_tab   = "prefix+c"
@@ -25,8 +26,16 @@ type = "plugin_action"
 command = "cloudmanic.herdr-plus.projects"
 description = "herdr-plus: projects"
 
+[theme.custom]
+panel_bg = "transparent"  # let the translucent WezTerm background (wallpaper) show through the navbar and panel surfaces
+surface0  = "#1e1e2e"     # inactive-tab pill background; matches the active workspace row (theme surface_dim). Re-tune this hex if the base theme changes (herdr config can't alias one token to another).
+
 [ui]
 agent_panel_sort = "spaces"
 
 [ui.toast]
 delivery = "off"
+
+[theme]
+name = "catppuccin"
+auto_switch = false
