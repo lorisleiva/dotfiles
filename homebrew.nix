@@ -77,6 +77,7 @@
       "github"
       "google-chrome"
       "gpg-suite"
+      "handy"
       "imageoptim"
       "insomnia"
       "iterm2"
