@@ -1,3 +1,4 @@
+onboarding = false
 [keys]
 prefix = "ctrl+a"
 previous_tab = ""  # unset (unused) so prefix+p is free for the projects picker below
@@ -11,6 +12,8 @@ new_tab   = "prefix+c"
 close_tab = "prefix+ampersand"
 workspace_picker = "prefix+w"
 goto             = "prefix+g"
+open_worktree    = "prefix+shift+o"  # new_worktree is prefix+shift+g by default
+remove_worktree  = "prefix+shift+r"  # deletes the checkout dir; keeps the branch; prompts if dirty
 copy_mode  = "prefix+y"  # herdr's copy-mode entry key; copy-mode's own internal keys (v/space select, y/Enter copy, q/Esc cancel) aren't configurable
 
 # herdr-plus projects picker (templates generated from herdr-plus.nix).
@@ -24,3 +27,6 @@ description = "herdr-plus: projects"
 
 [ui]
 agent_panel_sort = "spaces"
+
+[ui.toast]
+delivery = "off"
