@@ -10,6 +10,13 @@ let
 in
 
 {
+  imports = [ ./herdr-plus.nix ];
+
+  # Skip home-manager's options manpages: redundant with the online docs, and their
+  # generation emits an upstream `builtins.derivation`/`options.json` context warning
+  # under newer Nix. Disabling removes the warning and speeds up rebuilds.
+  manual.manpages.enable = false;
+
   home.username = user;
   home.homeDirectory = "/Users/${user}";
   home.stateVersion = "24.11";

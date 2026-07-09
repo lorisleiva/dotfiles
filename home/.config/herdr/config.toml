@@ -1,5 +1,6 @@
 [keys]
-prefix = "ctrl+b"
+prefix = "ctrl+a"
+previous_tab = ""  # unset (unused) so prefix+p is free for the projects picker below
 focus_pane_left  = "prefix+h"
 focus_pane_down  = "prefix+j"
 focus_pane_up    = "prefix+k"
@@ -11,6 +12,15 @@ close_tab = "prefix+ampersand"
 workspace_picker = "prefix+w"
 goto             = "prefix+g"
 copy_mode  = "prefix+y"  # herdr's copy-mode entry key; copy-mode's own internal keys (v/space select, y/Enter copy, q/Esc cancel) aren't configurable
+
+# herdr-plus projects picker (templates generated from herdr-plus.nix).
+# prefix+p is freed by unsetting previous_tab above. Also invokable from the CLI:
+#   herdr plugin action invoke cloudmanic.herdr-plus.projects
+[[keys.command]]
+key = "prefix+p"
+type = "plugin_action"
+command = "cloudmanic.herdr-plus.projects"
+description = "herdr-plus: projects"
 
 [ui]
 agent_panel_sort = "spaces"
