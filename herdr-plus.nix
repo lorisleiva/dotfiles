@@ -19,9 +19,10 @@ let
   pluginConfigDir = "${config.home.homeDirectory}/.config/herdr/plugins/config/cloudmanic.herdr-plus";
 
   # ---------------------------------------------------------------------------
-  # Default layout shape: two "windows" (tabs).
-  #   - "ai":   opencode + a clean terminal side by side (panes)
-  #   - "code": nvim
+  # Default layout shape: three "windows" (tabs).
+  #   - "ai":     opencode + a clean terminal side by side (panes)
+  #   - "code":   nvim
+  #   - "review": nvim with the diffview review already open (see nvim git.lua)
   # Tweak here to change the shape for every repo that doesn't override it.
   # (herdr-plus caps a tab at 4 panes.)
   # ---------------------------------------------------------------------------
@@ -36,6 +37,13 @@ let
     {
       name = "code";
       command = "nvim ."; # open the file tree at the project's working_dir (repo root)
+    }
+    {
+      name = "review";
+      # nvim with the review (DiffviewOpen, i.e. <leader>dd) already up. Uses -c
+      # rather than sending keystrokes so it's independent of keymap load timing;
+      # --imply-local still applies via default_args in the nvim diffview config.
+      command = "nvim -c DiffviewOpen";
     }
   ];
 

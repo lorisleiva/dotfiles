@@ -62,9 +62,16 @@ in
       init.defaultBranch = "main";
       merge.conflictstyle = "diff3";
       diff = {
-        external = "difft";
+        # NOTE: deliberately NOT setting `external = "difft"`. As an external diff,
+        # difftastic shadows git's native line diff, which breaks hunk-level staging
+        # (`git add -p`, Neogit). Instead difft is scoped to `git difftool` below, so
+        # pretty structural diffs are on demand while native diff drives staging/review.
         renames = "copies";
+        tool = "difftastic";
       };
+      difftool.prompt = false;
+      difftool.difftastic.cmd = ''difft "$LOCAL" "$REMOTE"'';
+      pager.difftool = true;
       credential."https://github.com".helper = [
         ""
         "!gh auth git-credential"
