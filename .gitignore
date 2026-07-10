@@ -1,6 +1,9 @@
 # nix build symlink
 result
 
+# raw voice examples used to derive VOICE.md; kept for future re-distillation, never committed (may contain private message content)
+home/.voice-examples/
+
 # herdr runtime artifacts (regenerated at runtime; never commit)
 home/.config/herdr/*.log
 home/.config/herdr/release-notes.json

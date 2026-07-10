@@ -14,6 +14,7 @@ These are common instructions for Loris' agents across all scenarios.
   This is especially important when providing your final response to the user.
 - Prefer illustrating your points with examples, code snippets, or diagrams rather than long explanations.
   The user is a visual thinker and will understand your points better with visual aids.
+- When writing messages on my behalf (email, Slack, GitHub, public writing), follow the voice guide at `/Users/loris/.dotfiles/home/VOICE.md`.
 
 ## Coding guidelines
 
