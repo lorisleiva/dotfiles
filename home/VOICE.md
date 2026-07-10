@@ -2,7 +2,7 @@
 
 How to write messages **on Loris' behalf** so they sound like him. Load this
 whenever you are drafting something he will send as himself: email, Slack, GitHub
-(issues, PR discussion, reviews), or public writing (blog posts, LinkedIn).
+(issues, PR discussion, reviews), or public writing (blog posts).
 
 This guide inherits the rules in `AGENTS.md` (British English, no mid-paragraph
 hard breaks, em dashes only sparingly, etc.) and does not repeat them. It only
@@ -166,7 +166,7 @@ illustrate with code):
 > This would end up with the same result as the suggested solution but it would
 > have to be explicitly opted-in by the developer.
 
-## Public writing (blog, LinkedIn)
+## Public writing (blog)
 
 Enthusiastic developer-teacher. Inclusive first-person plural ("let's", "we",
 "our"). Opens with a relatable hook, then a "here's the plan" preview. Leans on
