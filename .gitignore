@@ -21,3 +21,6 @@ home/.config/herdr/plugins/github/
 # the two generated dirs only, leaving the plugin's own config trackable if needed.
 home/.config/herdr/plugins/config/cloudmanic.herdr-plus/projects/
 home/.config/herdr/plugins/config/cloudmanic.herdr-plus/worktrees/
+
+# personal WIP / scratch plans — local notes, never committed to the public dotfiles
+.plans/
