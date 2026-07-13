@@ -94,13 +94,13 @@ let
     # -- codama (9) --
     { group = "codama"; repo = "codama"; }
     { group = "codama"; repo = "codama-rs"; }
-    { group = "codama"; repo = "renderers-demo"; }
-    { group = "codama"; repo = "renderers-js"; }
-    { group = "codama"; repo = "renderers-js-umi"; }
-    { group = "codama"; repo = "renderers-rust"; }
-    { group = "codama"; repo = "renderers-rust-cpi"; }
-    { group = "codama"; repo = "renderers-vixen-parser"; }
-    { group = "codama"; repo = "spec"; }
+    { group = "codama"; repo = "renderers-demo";          name = "codama-renderers-demo"; }
+    { group = "codama"; repo = "renderers-js";            name = "codama-renderers-js"; }
+    { group = "codama"; repo = "renderers-js-umi";        name = "codama-renderers-js-umi"; }
+    { group = "codama"; repo = "renderers-rust";          name = "codama-renderers-rust"; }
+    { group = "codama"; repo = "renderers-rust-cpi";      name = "codama-renderers-rust-cpi"; }
+    { group = "codama"; repo = "renderers-vixen-parser";  name = "codama-renderers-vixen-parser"; }
+    { group = "codama"; repo = "spec";                    name = "codama-spec"; }
     # whole-folder view for full-context AI sessions. Not a git repo -> project only.
     {
       group = "codama";
