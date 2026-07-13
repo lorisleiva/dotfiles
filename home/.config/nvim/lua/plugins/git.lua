@@ -14,6 +14,17 @@ return {
     -- require('diffview.actions') for the focus_entry keymap.
     opts = function()
       local actions = require('diffview.actions')
+      -- Robust refresh: diffview attaches its `R` keymap to the non-modifiable
+      -- `diffview://null` placeholder shown when a diff is empty. Refreshing from
+      -- there runs update_files -> set_file against the current (null) window and
+      -- fails with `E21: 'modifiable' is off`. Focusing the file list first moves
+      -- off the null buffer, then we refresh via the public tabpage-scoped API.
+      local function robust_refresh()
+        local view = require('diffview.lib').get_current_view()
+        if not view then return end
+        actions.focus_files()   -- leave diffview://null, land on the file list (position preserved)
+        view:update_files()     -- refresh via the public, tabpage-scoped API
+      end
       return {
         use_icons = true,          -- via nvim-web-devicons
         enhanced_diff_hl = true,   -- clearer intra-line highlights
@@ -30,6 +41,11 @@ return {
             { 'n', '<cr>', actions.focus_entry, { desc = 'Open diff and focus it' } },
             -- Stage hunks with `-`/`s` (defaults), then commit here via Neogit.
             { 'n', 'cc', function() require('neogit').open({ 'commit' }) end, { desc = 'Commit staged changes' } },
+            { 'n', 'R', robust_refresh, { desc = 'Refresh (focus list first, fixes E21 on empty diff)' } },
+          },
+          view = {
+            -- Override diffview's default `R` on diff/null buffers (see robust_refresh).
+            { 'n', 'R', robust_refresh, { desc = 'Refresh (focus list first, fixes E21 on empty diff)' } },
           },
           file_history_panel = {
             { 'n', '<cr>', actions.focus_entry, { desc = 'Open diff and focus it' } },

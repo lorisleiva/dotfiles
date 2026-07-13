@@ -52,6 +52,7 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias reload="exec ${SHELL} -l"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+alias fixdock="launchctl kickstart -k gui/\$(id -u)/com.apple.Dock.agent"  # relaunch the Dock (+ cmd+tab, Mission Control) if it wedges
 alias prunenodemodules="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
 
 # HTTP request helpers
