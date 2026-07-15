@@ -66,7 +66,7 @@ let
   #   worktree  - false to suppress the worktrees/ file (e.g. non-git-repo dirs)
   # ---------------------------------------------------------------------------
   repos = [
-    # -- solana-program (23) --
+    # -- solana-program --
     { group = "solana-program"; repo = "account-compression"; }
     { group = "solana-program"; repo = "actions"; }
     { group = "solana-program"; repo = "address-lookup-table"; }
@@ -90,8 +90,16 @@ let
     { group = "solana-program"; repo = "token-metadata"; }
     { group = "solana-program"; repo = "token-wrap"; }
     { group = "solana-program"; repo = "vote"; }
+    # whole-folder view for full-context AI sessions. Not a git repo -> project only.
+    {
+      group = "solana-program";
+      repo = "programs-all";
+      name = "programs (all)";
+      dir = "~/Code/@solana-program";
+      worktree = false;
+    }
 
-    # -- codama (9) --
+    # -- codama --
     { group = "codama"; repo = "codama"; }
     { group = "codama"; repo = "codama-rs"; }
     { group = "codama"; repo = "renderers-demo";          name = "codama-renderers-demo"; }
@@ -110,12 +118,12 @@ let
       worktree = false;
     }
 
-    # -- solana (3) --
+    # -- solana --
     { group = "solana"; repo = "kit"; }
     { group = "solana"; repo = "kit-plugins"; }
     { group = "solana"; repo = "js-configs"; }
 
-    # -- personal (4) --
+    # -- personal --
     { group = "personal"; repo = "cortex"; }
     { group = "personal"; repo = "dotfiles"; }
     { group = "personal"; repo = "laravel-actions"; }
