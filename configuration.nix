@@ -18,7 +18,6 @@
     NSGlobalDomain = {
       AppleShowAllExtensions = true;
     };
-    dock.autohide = true;
     finder.FXPreferredViewStyle = "clmv";
   };
 }
