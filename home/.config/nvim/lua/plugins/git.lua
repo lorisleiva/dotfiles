@@ -5,9 +5,9 @@ return {
     keys = { { '<leader>g', function() require('neogit').open() end, desc = 'Neogit' } },
   },
   {
-    -- Side-by-side review UI. Two flows (see keymaps):
-    --   <leader>dd  review uncommitted changes (AI output / pre-commit work)
-    --   <leader>dc  review a single commit (a Graphite branch's PR)
+    -- Side-by-side review UI, kept as a fallback and as a neogit dependency.
+    -- The <leader>d* review keymaps now drive codediff's unified inline view
+    -- (see plugins/codediff.lua); diffview remains reachable via :DiffviewOpen.
     'sindrets/diffview.nvim',
     cmd = { 'DiffviewOpen', 'DiffviewClose', 'DiffviewFileHistory' },
     -- opts is a function so it runs at load time (diffview on rtp), letting us
@@ -53,21 +53,6 @@ return {
         },
       }
     end,
-    keys = {
-      { '<leader>dd', '<cmd>DiffviewOpen<cr>', desc = 'Review uncommitted changes' },
-      { '<leader>dc', function()
-          -- Review the commit under the cursor (works from Neogit/log), else
-          -- fall back to browsing this branch's commit history.
-          local sha = vim.fn.expand('<cword>')
-          if sha:match('^%x%x%x%x%x%x%x+$') then
-            vim.cmd('DiffviewOpen ' .. sha .. '^!')
-          else
-            vim.cmd('DiffviewFileHistory')
-          end
-        end, desc = 'Review a commit' },
-      { '<leader>dh', '<cmd>DiffviewFileHistory %<cr>', desc = 'File history (current file)' },
-      { '<leader>dq', '<cmd>DiffviewClose<cr>', desc = 'Close review' },
-    },
   },
   {
     'lewis6991/gitsigns.nvim',

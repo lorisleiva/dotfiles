@@ -22,7 +22,7 @@ let
   # Default layout shape: three "windows" (tabs).
   #   - "ai":     opencode + a clean terminal side by side (panes)
   #   - "code":   nvim
-  #   - "review": nvim with the diffview review already open (see nvim git.lua)
+  #   - "review": nvim with the codediff unified review already open (see nvim codediff.lua)
   # Tweak here to change the shape for every repo that doesn't override it.
   # (herdr-plus caps a tab at 4 panes.)
   # ---------------------------------------------------------------------------
@@ -40,10 +40,10 @@ let
     }
     {
       name = "review";
-      # nvim with the review (DiffviewOpen, i.e. <leader>dd) already up. Uses -c
-      # rather than sending keystrokes so it's independent of keymap load timing;
-      # --imply-local still applies via default_args in the nvim diffview config.
-      command = "nvim -c DiffviewOpen";
+      # nvim with the codediff unified review (CodeDiff, i.e. <leader>dd) already
+      # up: a single-buffer inline diff explorer of the working-tree changes. Uses
+      # -c rather than sending keystrokes so it's independent of keymap load timing.
+      command = "nvim -c CodeDiff";
     }
   ];
 
