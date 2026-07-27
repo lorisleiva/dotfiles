@@ -6,8 +6,9 @@
 -- Mechanism (no ports, no opencode API):
 --   herdr injects HERDR_WORKSPACE_ID into every managed pane. We list agents
 --   with `herdr agent list`, keep the one(s) in our workspace, and deliver text
---   with `herdr agent send <pane_id> <text>` (verified to land in the prompt
---   unsubmitted).
+--   with `herdr pane send-text <pane_id> <text>` (literal text, lands in the
+--   prompt unsubmitted -- you press enter yourself). NB: `herdr agent prompt`
+--   exists but auto-submits, so it is deliberately NOT used here.
 
 local M = {}
 
@@ -103,7 +104,7 @@ local function send_comment(location, message, pane_id, agent_name)
     out_lines[#out_lines + 1] = (line == '') and '' or ('  ' .. line)
   end
   local text = table.concat(out_lines, '\n') .. '\n'
-  local out, err = herdr({ 'agent', 'send', pane_id, text })
+  local out, err = herdr({ 'pane', 'send-text', pane_id, text })
   if not out then
     vim.notify('review: failed to send to ' .. agent_name .. ': ' .. err, vim.log.levels.ERROR)
     return
