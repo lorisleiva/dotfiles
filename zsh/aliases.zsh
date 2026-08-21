@@ -40,6 +40,7 @@ alias lsd="ls -lh | grep --color=never '^d'"
 
 # Command manipulations
 alias h="herdr"
+alias claude-work="CLAUDE_CONFIG_DIR=$HOME/.claude-work claude"
 alias copy="tr -d '\n' | pbcopy"
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
