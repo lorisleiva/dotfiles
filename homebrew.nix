@@ -11,6 +11,10 @@
     onActivation = {
       upgrade = true;
       cleanup = "zap";
+      # Skip Mac App Store apps during cleanup. `mas uninstall` needs root and
+      # fails on SIP-protected / non-App-Store bundles (e.g. Xcode, TestFlight),
+      # so let those apps live outside nix's management.
+      extraFlags = [ "--no-mas" ];
     };
 
     taps = [
