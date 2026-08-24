@@ -51,6 +51,7 @@
         restart_service = "changed";
       }
       "tmux"
+      "xcodegen"
       "yarn"
       # tapped formulae (full paths)
       "anomalyco/tap/opencode"
