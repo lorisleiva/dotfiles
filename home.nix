@@ -121,7 +121,6 @@ in
       export DOTFILES="${dotfiles}"
       export EDITOR=code
       export DO_NOT_TRACK=1
-      export CPATH="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
 
       unsetopt nomatch
 
