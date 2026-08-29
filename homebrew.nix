@@ -17,7 +17,6 @@
       "anomalyco/tap"
       "blendle/blendle"
       "shivammathur/php"
-      "steipete/tap"
       "withgraphite/tap"
     ];
 
@@ -100,8 +99,6 @@
       "vlc"
       "wezterm"
       "whatsapp"
-      # tapped casks (full paths)
-      "steipete/tap/codexbar"
     ];
 
     # NOTE: Mac App Store apps are intentionally not declared here.
