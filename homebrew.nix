@@ -67,6 +67,7 @@
       "claude"
       "claude-code"
       "cleanshot"
+      "codex"
       "daisydisk"
       "dbngin"
       "discord"
