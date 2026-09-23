@@ -65,7 +65,7 @@
       "bartender"
       "chatgpt"
       "claude"
-      "claude-code"
+      "claude-code@latest"
       "cleanshot"
       "codex"
       "daisydisk"
