@@ -43,6 +43,7 @@
     casks = [
       "claude-code@latest"
       "codex"
+      "paseo"
       "wezterm"
     ];
 
