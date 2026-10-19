@@ -1,5 +1,18 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "bash": {
+      "*": "allow",
+      "git push": "ask",
+      "git push *": "ask",
+      "gt submit": "ask",
+      "gt submit *": "ask",
+      "gt ss": "ask",
+      "gt ss *": "ask",
+      "gh pr merge *": "ask",
+      "dep deploy *": "ask"
+    }
+  },
   "agent": {
     "plan": {
       "mode": "primary",

@@ -27,6 +27,7 @@ in
     dasel
     difftastic
     findutils
+    fira-code # the WezTerm font
     gh
     gnugrep
     gnutar
