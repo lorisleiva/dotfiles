@@ -1,3 +1,5 @@
+# Homebrew, and what every machine gets from it. A profile adds its own
+# taps, brews and casks on top (the lists are merged).
 { user, ... }:
 
 {
@@ -10,96 +12,38 @@
     enable = true;
     onActivation = {
       upgrade = true;
+      # Anything installed but not declared by the machine's profile is removed.
       cleanup = "zap";
     };
 
     taps = [
       "anomalyco/tap"
-      "blendle/blendle"
-      "shivammathur/php"
-      "withgraphite/tap"
     ];
 
     brews = [
       "autojump"
       "bash"
-      "cloudflared"
       "composer"
-      "dnsmasq"
-      "flock"
-      "herdr"
-      "mas"
       "mysql"
       "neovim"
-      "nginx"
       "nvm"
-      "openssl@3"
       "php"
-      "php-code-sniffer"
-      "php@8.1"
-      "php@8.2"
-      "pidof"
-      "pinentry-mac"
-      "pipx"
       "pnpm"
       "pure"
-      "pyenv"
-      "python@3.12"
-      "rabbitmq"
       {
         name = "redis";
         restart_service = "changed";
       }
       "tmux"
       "xcodegen"
-      "yarn"
       # tapped formulae (full paths)
       "anomalyco/tap/opencode"
-      "shivammathur/php/php@8.0"
-      "withgraphite/tap/graphite"
     ];
 
     casks = [
-      "anylist"
-      "arc"
-      "bartender"
-      "chatgpt"
-      "claude"
       "claude-code@latest"
-      "cleanshot"
       "codex"
-      "daisydisk"
-      "dbngin"
-      "discord"
-      "docker-desktop"
-      "elgato-control-center"
-      "figma"
-      "firefox"
-      "flux-app"
-      "github"
-      "google-chrome"
-      "gpg-suite"
-      "handy"
-      "imageoptim"
-      "insomnia"
-      "iterm2"
-      "jetbrains-toolbox"
-      "mactex"
-      "moom"
-      "ngrok"
-      "notion"
-      "raycast"
-      "signal"
-      "sip-app"
-      "slack"
-      "spotify"
-      "sublime-text"
-      "tableplus"
-      "telegram"
-      "visual-studio-code"
-      "vlc"
       "wezterm"
-      "whatsapp"
     ];
 
     # NOTE: Mac App Store apps are intentionally not declared here.

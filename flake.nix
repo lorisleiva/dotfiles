@@ -21,23 +21,40 @@
       nixpkgs,
     }:
     let
-      user = "loris";
+      # One machine setup: the shared modules plus a profile on top.
+      # `user` is the macOS account the setup is for; bootstrap.sh checks it.
+      mkHost =
+        { user, profile }:
+        nix-darwin.lib.darwinSystem {
+          specialArgs = { inherit user; };
+          modules = [
+            ./modules/darwin.nix
+            ./modules/homebrew.nix
+            nix-homebrew.darwinModules.nix-homebrew
+            home-manager.darwinModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.extraSpecialArgs = { inherit user; };
+              home-manager.users.${user} = import ./modules/home.nix;
+              home-manager.backupFileExtension = "backup";
+            }
+            profile
+          ];
+        };
     in
     {
-      darwinConfigurations."mac" = nix-darwin.lib.darwinSystem {
-        specialArgs = { inherit user; };
-        modules = [
-          ./configuration.nix
-          nix-homebrew.darwinModules.nix-homebrew
-          home-manager.darwinModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit user; };
-            home-manager.users.${user} = import ./home.nix;
-            home-manager.backupFileExtension = "backup";
-          }
-        ];
+      # My everyday Mac: the full set of apps and tools.
+      darwinConfigurations.personal = mkHost {
+        user = "loris";
+        profile = ./profiles/personal.nix;
+      };
+
+      # A dedicated machine for coding agents: the dev tools only, no personal
+      # apps, and commits signed with that machine's own SSH key.
+      darwinConfigurations.agents = mkHost {
+        user = "paseo";
+        profile = ./profiles/agents.nix;
       };
     };
 }

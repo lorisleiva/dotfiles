@@ -1,3 +1,5 @@
+# Home Manager config shared by every machine: shell, git, editors and the
+# agents' instructions. A profile adds what only it needs.
 {
   config,
   pkgs,
@@ -10,8 +12,6 @@ let
 in
 
 {
-  imports = [ ./herdr-plus.nix ];
-
   # Skip home-manager's options manpages: redundant with the online docs, and their
   # generation emits an upstream `builtins.derivation`/`options.json` context warning
   # under newer Nix. Disabling removes the warning and speeds up rebuilds.
@@ -26,15 +26,11 @@ in
     coreutils
     dasel
     difftastic
-    doctl
     findutils
     gh
-    gifski
     gnugrep
     gnutar
-    graphviz
     httpie
-    imagemagick
     jq
     nixfmt
     prettyping
@@ -53,10 +49,10 @@ in
     enable = true;
     lfs.enable = true;
     settings = {
+      # Each profile says how commits are signed (`user.signingkey`, `gpg.format`).
       user = {
         name = "Loris Leiva";
         email = "loris.leiva@gmail.com";
-        signingkey = "6A6BFEB7EC92C347";
       };
       commit.gpgsign = true;
       init.defaultBranch = "main";
@@ -119,7 +115,6 @@ in
     initContent = ''
       # env
       export DOTFILES="${dotfiles}"
-      export EDITOR=code
       export DO_NOT_TRACK=1
 
       unsetopt nomatch
@@ -146,19 +141,11 @@ in
     '';
   };
 
-  home.file.".gnupg/gpg-agent.conf".text = ''
-    default-cache-ttl 600
-    max-cache-ttl 7200
-    pinentry-program /opt/homebrew/bin/pinentry-mac
-  '';
-
   # Symlinks to dotfiles.
   home.file.".config/wezterm".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/wezterm";
   home.file.".config/nvim".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/nvim";
-  home.file.".config/herdr".source =
-    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/herdr";
 
   home.file.".claude/CLAUDE.md".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";

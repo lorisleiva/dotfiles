@@ -1,8 +1,7 @@
+# System settings shared by every machine.
 { user, ... }:
 
 {
-  imports = [ ./homebrew.nix ];
-
   # Determinate already manages the Nix daemon, so nix-darwin shouldn't.
   nix.enable = false;
   nixpkgs.config.allowUnfree = true;
