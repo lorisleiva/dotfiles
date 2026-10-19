@@ -151,3 +151,22 @@ php81() {
     brew unlink php@8.0
     brew link --force php@8.1
 }
+
+# `oc-remote [opencode args]`: OpenCode's TUI here, attached to the headless
+# server on the agents machine (its `opencode-serve` agent) through an SSH
+# tunnel, in the same folder under its ~/Code. Sessions live there: resume
+# them with `oc-remote -c` / `oc-remote -s <id>`, never a local `opencode -s`.
+# The server password is read from this Mac's keychain:
+#   security add-generic-password -a "$USER" -s opencode-agents -w '<password>'
+oc-remote() {
+    local host=paseo@agents remote_home=/Users/paseo port=4096 opened=0
+    local dir="$remote_home/Code"
+    [[ $PWD == $HOME/Code/* ]] && dir="$remote_home/Code/${PWD#$HOME/Code/}"
+    if ! nc -z 127.0.0.1 $port 2>/dev/null; then
+        ssh -f -N -o ExitOnForwardFailure=yes -L $port:127.0.0.1:$port $host || return
+        opened=1
+    fi
+    OPENCODE_SERVER_PASSWORD="$(security find-generic-password -s opencode-agents -w)" \
+        opencode attach http://127.0.0.1:$port --dir "$dir" "$@"
+    (( opened )) && pkill -f "L $port:127.0.0.1:$port $host"
+}
