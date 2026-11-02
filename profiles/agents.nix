@@ -15,6 +15,41 @@
   # no automatic login). Join once with `sudo tailscale up --auth-key=…`.
   services.tailscale.enable = true;
 
+  # tailscaled logs nowhere by default: keep its output, so a stall can be
+  # diagnosed. Once (Nov 2026) it stayed "Connected" to the control server
+  # but answered no peer until restarted, with no recorded cause; restarting
+  # it daily bounds such a stall to a night without anyone at the machine.
+  launchd.daemons.tailscaled.serviceConfig = {
+    StandardOutPath = "/var/log/tailscaled.log";
+    StandardErrorPath = "/var/log/tailscaled.log";
+  };
+  # Rotated at 10 MB, 5 kept; the daily restart reopens the file.
+  environment.etc."newsyslog.d/tailscaled.conf".text = ''
+    /var/log/tailscaled.log  644  5  10240  *  NJ
+  '';
+  launchd.daemons.tailscaled-restart.serviceConfig = {
+    Label = "local.tailscaled-restart";
+    ProgramArguments = [
+      "/bin/launchctl"
+      "kickstart"
+      "-k"
+      "system/com.tailscale.tailscaled"
+    ];
+    StartCalendarInterval = [
+      {
+        Hour = 5;
+        Minute = 0;
+      }
+    ];
+  };
+
+  # A server: never sleeps (idle, or with the lid closed), on London time.
+  power.sleep.computer = "never";
+  system.activationScripts.postActivation.text = ''
+    pmset -a disablesleep 1
+  '';
+  time.timeZone = "Europe/London";
+
   home-manager.users.${user} =
     { config, ... }:
     let
