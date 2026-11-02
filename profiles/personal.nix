@@ -68,6 +68,7 @@
       "sublime-text"
       "tableplus"
       "telegram"
+      "thebrowsercompany-dia"
       "visual-studio-code"
       "vlc"
       "whatsapp"
